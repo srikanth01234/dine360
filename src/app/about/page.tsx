@@ -38,14 +38,14 @@ const AboutPage = () => {
               <div>
                 <h3 className="font-bold text-zinc-900 text-lg mb-2">Modern Restaurant Solutions</h3>
                 <p className="text-zinc-500 text-base leading-relaxed">
-                  Innovative POS systems and marketing tools designed to streamline operations and boost growth for restaurants of all sizes.
+                  Dine360 delivers powerful restaurant management technology designed to simplify operations and help restaurants grow faster in a competitive industry.
                 </p>
               </div>
               
               <div>
                 <h3 className="font-bold text-zinc-900 text-lg mb-2">Seamless Integration</h3>
                 <p className="text-zinc-500 text-base leading-relaxed">
-                  Unified platforms featuring clean interfaces, powerful analytics, and customer-first experiences.
+                  Our platform connects every part of your restaurant — from orders and inventory to customer insights — into one intelligent system that keeps operations running smoothly.
                 </p>
               </div>
             </motion.div>
@@ -93,7 +93,8 @@ const AboutPage = () => {
                  >
                    <h3 className="text-3xl font-bold text-zinc-900 mb-3">Our Philosophy</h3>
                    <p className="text-zinc-600 text-base leading-relaxed">
-                     At Dine360, we believe in empowering restaurateurs with technology that feels invisible yet powerful, enabling them to focus on what they do best—serving great food.
+                     At Dine360, we believe restaurant technology should simplify operations rather than complicate them.
+                     Our mission is to build tools that work quietly in the background, allowing restaurant owners and teams to focus on delivering outstanding food and unforgettable dining experiences.
                    </p>
                  </motion.div>
                </div>
@@ -135,10 +136,19 @@ const AboutPage = () => {
               className="space-y-6 text-zinc-600 text-base leading-relaxed mb-12"
             >
               <p>
-                Dine360 was founded by a team of hospitality veterans and tech innovators. Their shared dream was to create a digital ecosystem accessible to every restaurant owner. United by their belief in the transformational power of efficient management, they embarked on a journey to build 'Dine360'.
+                Dine360 was founded by a team of technology innovators and hospitality experts who saw how difficult it was for restaurants to manage operations using disconnected tools.
               </p>
               <p>
-                With relentless dedication, they gathered a team of experts and launched this innovative platform, creating a global community of successful restaurateurs, all connected by the desire to grow and delight customers.
+                Many restaurant owners were forced to juggle multiple systems for orders, inventory, reservations, and customer data — leading to inefficiencies, mistakes, and lost opportunities.
+              </p>
+              <p>
+                We built Dine360 to solve this problem.
+              </p>
+              <p>
+                Our goal was simple: create one unified platform that connects every part of restaurant operations, helping owners make better decisions and deliver better service.
+              </p>
+              <p>
+                Today, Dine360 powers restaurants with modern tools designed to increase efficiency, improve customer experience, and support sustainable growth.
               </p>
             </motion.div>
 
@@ -157,7 +167,7 @@ const AboutPage = () => {
                 className="bg-white p-6 rounded-2xl shadow-sm border border-zinc-100"
               >
                 <h4 className="text-3xl font-black text-zinc-900 mb-1">200+</h4>
-                <p className="text-zinc-500 text-sm font-medium">Project Challenges</p>
+                <p className="text-zinc-500 text-sm font-medium">Restaurant Projects</p>
               </motion.div>
               
               <motion.div 
@@ -227,8 +237,18 @@ const AboutPage = () => {
               transition={{ delay: 0.1 }}
               className="text-3xl md:text-5xl font-black text-zinc-900 mb-6"
             >
-              Market Valuation Growth
+              Restaurant Technology Market Growth
             </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-zinc-500 text-lg max-w-3xl mx-auto mb-10"
+            >
+              The restaurant industry is rapidly evolving with the adoption of digital tools and automation. Restaurants worldwide are investing in smart management systems to improve efficiency, reduce operational complexity, and deliver better customer experiences.{"\n"}
+              Dine360 is positioned at the center of this transformation — providing modern restaurant management solutions designed for the next generation of dining businesses.{"\n"}
+              Our platform helps restaurants adapt to changing customer expectations while maintaining operational control and scalability.
+            </motion.p>
           </div>
 
           <motion.div 
@@ -382,8 +402,8 @@ const AboutPage = () => {
                       <span className="text-sm font-bold text-zinc-500">Operating Costs</span>
                   </div>
                 </div>
-                <div className="text-[10px] text-zinc-400 max-w-xs text-right hidden md:block">
-                  * Projections based on compound annual growth rate (CAGR) of 15.4% in the hospitality tech sector.
+                <div className="text-[10px] text-zinc-400 max-w-sm text-right hidden md:block leading-relaxed">
+                  Market analysis powered by Dine360 analytics, reflecting the increasing demand for integrated restaurant technology platforms across global markets.
                 </div>
             </div>
 

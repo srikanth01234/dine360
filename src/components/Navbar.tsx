@@ -47,11 +47,30 @@ const Navbar = () => {
   ];
 
   const restaurantTypes = [
-    { name: 'Fast Food', href: '/restaurant-types/fast-food', icon: Utensils },
-    { name: 'Food Trucks', href: '/restaurant-types/food-truck', icon: Truck },
-    { name: 'Cafe & Bistro', href: '/restaurant-types/cafe-bistro', icon: Coffee },
-    { name: 'Ghost / Virtual Dine', href: '/restaurant-types/ghost-kitchen', icon: Smartphone },
-    { name: 'Full Service', href: '/restaurant-types/full-service', icon: ChefHat },
+    { name: 'Fine Dining', href: '/restaurant-types/fine-dining', icon: Utensils },
+    { name: 'Casual Dining', href: '/restaurant-types/casual-dining', icon: Utensils },
+    { name: 'Fast Casual Restaurant', href: '/restaurant-types/fast-casual', icon: Utensils },
+    { name: 'Ghost Restaurant', href: '/restaurant-types/ghost-kitchen', icon: Smartphone },
+    { name: 'Family Style Restaurant', href: '/restaurant-types/family-style', icon: Users },
+    { name: 'Fast Food Restaurant', href: '/restaurant-types/fast-food', icon: Utensils },
+    { name: 'Food Truck, Cart, or Stand', href: '/restaurant-types/food-truck', icon: Truck },
+    { name: 'Cafe', href: '/restaurant-types/cafe-bistro', icon: Coffee },
+    { name: 'Buffet Restaurant', href: '/restaurant-types/buffet', icon: Utensils },
+    { name: 'Pub', href: '/restaurant-types/pub', icon: Coffee },
+    { name: 'Cafeteria', href: '/restaurant-types/cafeteria', icon: Utensils },
+    { name: 'Coffee House', href: '/restaurant-types/coffee-house', icon: Coffee },
+    { name: 'Diner', href: '/restaurant-types/diner', icon: Utensils },
+    { name: 'Pop-Up Restaurant', href: '/restaurant-types/pop-up', icon: Utensils },
+    { name: 'Contemporary Casual Restaurant', href: '/restaurant-types/contemporary-casual', icon: Utensils },
+    { name: 'Bistro', href: '/restaurant-types/bistro', icon: Coffee },
+    { name: 'Destination Restaurant', href: '/restaurant-types/destination', icon: Globe },
+    { name: 'Teppanyaki Grill', href: '/restaurant-types/teppanyaki', icon: Utensils },
+    { name: 'Mongolian Barbecue', href: '/restaurant-types/mongolian-bbq', icon: Utensils },
+    { name: 'Concession Stand', href: '/restaurant-types/concession', icon: Utensils },
+    { name: 'Digital-Only Restaurant', href: '/restaurant-types/digital-only', icon: Smartphone },
+    { name: 'Theme Restaurant', href: '/restaurant-types/theme', icon: Utensils },
+    { name: 'Bakery', href: '/restaurant-types/bakery', icon: Coffee },
+    { name: 'Delivery-Only Restaurant', href: '/restaurant-types/delivery-only', icon: Truck },
   ];
 
   const resourceItems = [
@@ -140,27 +159,32 @@ const Navbar = () => {
             <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
           </Link>
           
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block w-[500px]">
-            <div className="bg-white rounded-2xl shadow-2xl border border-zinc-100 overflow-hidden p-3 grid grid-cols-2 gap-2">
+          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block w-[1400px]">
+            <div className="bg-white rounded-2xl shadow-2xl border border-zinc-100 overflow-hidden px-10 py-8 grid grid-cols-6 gap-x-6 gap-y-2">
               {restaurantTypes.map((item) => (
                 <Link 
                   key={item.name} 
                   href={item.href}
-                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 transition-colors group/item border border-transparent hover:border-zinc-100"
+                  className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-colors group/item border border-transparent hover:border-zinc-100"
                 >
-                  <span className={`w-10 h-10 flex items-center justify-center rounded-lg bg-red-50 text-red-600 group-hover/item:bg-red-600 group-hover/item:text-white transition-all`}>
-                    <item.icon className="w-5 h-5" />
-                  </span>
-                  <span className="font-medium text-zinc-600 group-hover/item:text-zinc-900 transition-colors text-sm">{item.name}</span>
+                  <div className="flex items-center gap-4">
+                    <span className="text-red-600 bg-red-50 w-10 h-10 min-w-[40px] flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all">
+                      <item.icon className="w-5 h-5" />
+                    </span>
+                    <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
                 </Link>
               ))}
-              <Link 
-                href="/restaurant-types"
-                className="flex items-center justify-between p-3 rounded-xl bg-red-50 hover:bg-red-100 transition-colors group/view-all"
-              >
-                <span className="font-semibold text-red-700 text-sm">View All</span>
-                <ArrowRight className="w-4 h-4 text-red-700 transition-transform group-hover/view-all:translate-x-1" />
-              </Link>
+              <div className="col-span-6 mt-4 pt-4 border-t border-zinc-100 flex justify-center">
+                <Link 
+                  href="/restaurant-types"
+                  className="flex items-center gap-2 px-8 py-3 rounded-xl bg-red-50 hover:bg-red-100 text-red-700 transition-colors group/view-all font-semibold text-sm"
+                >
+                  View All Restaurant Types
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover/view-all:translate-x-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

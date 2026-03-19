@@ -65,7 +65,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-black pt-24 pb-0 mt-0 text-white overflow-visible">
+    <footer className="relative bg-black pt-40 md:pt-24 pb-0 mt-20 md:mt-0 text-white overflow-visible">
       
       {/* Floating Info Section (Brand Red Bar) */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-6xl z-40">

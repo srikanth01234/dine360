@@ -20,115 +20,83 @@ const faqData = {
   general: [
     {
       question: "What is Dine360?",
-      answer: "Dine360 is a comprehensive restaurant management system that helps you manage orders, inventory, menus, reservations, and more from a single platform."
+      answer: "Dine360 is an all-in-one restaurant management platform that helps restaurants manage orders, billing, inventory, reservations, kitchen workflows, and analytics from a single system."
     },
     {
       question: "What types of restaurants can use Dine360?",
-      answer: "Dine360 works for all restaurant types including fine dining, fast food, cafes, food trucks, ghost kitchens, bakeries, and full-service restaurants."
+      answer: "Dine360 is designed for all restaurant formats including fast food outlets, cafés, bakeries, food trucks, ghost kitchens, fine dining restaurants, and multi-branch restaurant chains."
     },
     {
-      question: "Is there a free trial?",
-      answer: "Yes, we offer a 14-day free trial with full access to all features. No credit card required to start."
+      question: "Is Dine360 suitable for small restaurants?",
+      answer: "Yes. Dine360 is built to scale from small cafés and quick-service restaurants to large multi-location restaurant businesses."
     },
     {
-      question: "How long does setup take?",
-      answer: "Most restaurants are up and running within 24-48 hours. Our onboarding team helps you with the entire setup process."
-    },
-    {
-      question: "Is training included?",
-      answer: "Yes. Our dedicated onboarding team provides comprehensive training for you and your staff, including video tutorials and live support sessions."
+      question: "Can Dine360 manage multiple branches?",
+      answer: "Yes. Dine360 supports multi-branch restaurants with centralized dashboards, branch-wise reports, and unified operational control."
     }
   ],
   features: [
     {
-      question: "Does Dine360 support QR code menus?",
-      answer: "Yes! Customers can scan QR codes to view your digital menu, place orders, and pay directly from their phones without downloading any app."
+      question: "What features does Dine360 offer?",
+      answer: "Dine360 includes essential restaurant management tools such as POS billing, kitchen display system (KDS), table reservations, inventory management, sales analytics, CRM, purchase management, and delivery integrations."
     },
     {
-      question: "Can I manage multiple locations?",
-      answer: "Absolutely. Dine360 supports multi-location management with centralized reporting and location-specific menu customization."
+      question: "Does Dine360 support kitchen display systems (KDS)?",
+      answer: "Yes. Dine360 provides a real-time Kitchen Display System that sends orders directly from the POS to the kitchen screen, improving speed and reducing errors."
     },
     {
-      question: "Does it integrate with delivery platforms?",
-      answer: "Yes, we integrate with major delivery platforms like UberEats, DoorDash, and GrubHub to consolidate all orders in one system."
+      question: "Can I manage table reservations with Dine360?",
+      answer: "Yes. The table reservation system allows you to track reservations, manage walk-ins, view table availability, and control seating from a visual floor layout."
     },
     {
-      question: "Can customers make table reservations online?",
-      answer: "Yes, our table reservation system allows customers to book tables online, and you can manage all reservations from your dashboard."
-    },
-    {
-      question: "Does it work on tablets and desktops?",
-      answer: "Yes, Dine360 is fully responsive and works seamlessly on tablets, desktops, and mobile devices."
-    },
-    {
-      question: "Can I customize my restaurant's website?",
-      answer: "Yes, you can fully customize your restaurant website with your branding, colors, images, and menu without any coding required."
+      question: "Does Dine360 track inventory automatically?",
+      answer: "Yes. Inventory levels update automatically as orders are processed, helping you track ingredients and receive low-stock alerts."
     }
   ],
   pricing: [
     {
       question: "How much does Dine360 cost?",
-      answer: "We offer three plans: Starter at $49/month, Professional at $99/month, and Enterprise with custom pricing. All plans include core features with varying limits."
+      answer: "Dine360 offers flexible pricing plans designed for restaurants of different sizes. Pricing varies depending on the number of users, branches, and advanced features required."
     },
     {
-      question: "Are there any hidden fees?",
-      answer: "No hidden fees. Our pricing is transparent and includes all features listed in your plan. Payment processing fees apply separately."
+      question: "Is there a free trial?",
+      answer: "Yes. Dine360 offers a free trial so restaurants can explore the platform and test its features before choosing a subscription plan."
     },
     {
-      question: "Can I change plans later?",
-      answer: "Yes, you can upgrade or downgrade your plan at any time. Changes take effect on your next billing cycle."
-    },
-    {
-      question: "Do you offer discounts for annual billing?",
-      answer: "Yes, we offer 20% discount when you pay annually instead of monthly."
-    },
-    {
-      question: "Is there a setup fee?",
-      answer: "No setup fees. We also provide free onboarding and training with all plans."
+      question: "Are there any setup fees?",
+      answer: "In most cases, there are no hidden setup costs. Our team assists with onboarding to ensure a smooth implementation."
     }
   ],
   technical: [
     {
-      question: "Do I need special hardware?",
-      answer: "No special hardware required. Dine360 works on any tablet, computer, or smartphone with internet access. We also support standard POS printers and card readers."
+      question: "Does Dine360 work on tablets and desktops?",
+      answer: "Yes. Dine360 is cloud-based and works on desktops, tablets, and compatible POS devices."
     },
     {
-      question: "Is data secure?",
-      answer: "Yes, all data is encrypted end-to-end with bank-level security (SSL/TLS). We're PCI DSS compliant and perform regular security audits."
+      question: "Does the POS work if the internet goes down?",
+      answer: "Yes. Dine360 includes offline functionality so your POS continues running even if the internet connection temporarily drops."
     },
     {
-      question: "What happens if internet goes down?",
-      answer: "Dine360 has offline mode that allows you to continue taking orders. Data syncs automatically when connection is restored."
-    },
-    {
-      question: "How is data backed up?",
-      answer: "Your data is automatically backed up daily to secure cloud servers with redundancy. You can also export your data anytime."
-    },
-    {
-      question: "Can I integrate with my existing accounting software?",
-      answer: "Yes, we integrate with popular accounting software like QuickBooks, Xero, and other systems via API."
+      question: "Is restaurant data secure?",
+      answer: "Yes. Dine360 uses secure cloud infrastructure and encrypted data storage to protect restaurant and customer information."
     }
   ],
   support: [
     {
-      question: "What support channels are available?",
-      answer: "We offer 24/7 support via live chat, email, and phone. Premium plans include priority support and dedicated account manager."
+      question: "What kind of support does Dine360 provide?",
+      answer: "Dine360 offers dedicated customer support including onboarding assistance, technical help, and system training."
     },
     {
-      question: "How quickly do you respond to issues?",
-      answer: "We aim to respond within 1 hour during business hours and 4 hours for after-hours issues. Critical issues are handled immediately."
+      question: "Is training provided for staff?",
+      answer: "Yes. Our onboarding team provides training to ensure your staff can quickly learn and use the system efficiently."
     },
     {
-      question: "Do you provide on-site support?",
-      answer: "On-site support is available for Enterprise customers. Other plans can request on-site visits for an additional fee."
+      question: "How can I contact support?",
+      answer: "You can contact the Dine360 support team through email, phone, or the support portal available inside the platform."
     },
     {
-      question: "Is there a knowledge base?",
-      answer: "Yes, we have comprehensive documentation, video tutorials, and a searchable knowledge base available 24/7."
-    },
-    {
-      question: "Can I request custom features?",
-      answer: "Yes! Enterprise customers can request custom features. We also consider feature requests from all users for future updates."
+      question: "Can I request a product demo?",
+      answer: "Yes. You can request a live demo to see how Dine360 works and how it can improve your restaurant operations."
     }
   ]
 };
@@ -142,7 +110,7 @@ const FAQPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white font-sans selection:bg-rose-100 selection:text-rose-900 pb-20">
+    <div className="relative min-h-screen bg-black text-white font-sans selection:bg-rose-100 selection:text-rose-900">
       <Navbar />
 
       {/* Hero Section with Background Image */}
@@ -171,7 +139,7 @@ const FAQPage = () => {
             transition={{ delay: 0.1 }}
             className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Find answers to common questions about Dine360's setup, training, and security.
+            Find answers to common questions about Dine360’s features, setup, pricing, and support to help you get started quickly.
           </motion.p>
         </div>
       </section>

@@ -115,7 +115,7 @@ const RestaurantTypesPage = () => {
     <div className="min-h-screen bg-black font-sans selection:bg-red-600 selection:text-white">
       <Navbar />
 
-      <main className="pb-20">
+      <main>
 
         {/* ─── HERO SECTION ─────────────────────────────────────────────── */}
         <section className="relative min-h-screen flex items-center pt-28 pb-16 px-6 overflow-hidden">

@@ -12,7 +12,7 @@ const ContactPage = () => {
 
       <main className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
         {/* Header Section */}
-        <div className="relative overflow-hidden bg-red-600 rounded-[32px] p-12 lg:p-20 text-center mb-16">
+        <div className="relative overflow-hidden bg-red-600 rounded-[32px] p-8 lg:p-12 text-center mb-16">
           {/* Decorative Circles */}
           <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border-[20px] border-white/10 rounded-full opacity-20" />
           <div className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 w-48 h-48 border-[15px] border-white/10 rounded-full opacity-20" />
@@ -21,11 +21,14 @@ const ContactPage = () => {
 
           <div className="relative z-10">
             <span className="inline-block bg-white text-red-600 text-[10px] font-black uppercase tracking-[0.2em] px-6 py-2 rounded-lg mb-6 shadow-sm">
-              Write to us
+              WRITE TO US
             </span>
             <h1 className="text-4xl lg:text-6xl font-black text-white tracking-tight">
               Get In Touch
             </h1>
+            <p className="text-white/90 max-w-2xl mx-auto mt-6 text-lg font-medium">
+              We’d love to hear from you. Whether you want to learn more about Dine360, request a demo, or need support — our team is here to help your restaurant grow.
+            </p>
           </div>
         </div>
 
@@ -34,8 +37,10 @@ const ContactPage = () => {
           <div className="space-y-10">
             <div className="space-y-4">
               <h2 className="text-4xl font-black text-zinc-900">Let's Talk!</h2>
-              <p className="text-zinc-500 font-medium">
-                Get in touch with us using the enquiry form or contact details below.
+              <p className="text-zinc-500 font-medium whitespace-pre-line">
+                Have questions about Dine360 or want to see how it can transform your restaurant operations?{"\n"}
+                Fill out the form and our team will get back to you shortly.{"\n"}
+                We typically respond within 24 hours.
               </p>
             </div>
 
@@ -45,16 +50,16 @@ const ContactPage = () => {
                   <label className="text-xs font-black uppercase tracking-widest text-black ml-1">First Name</label>
                   <input 
                     type="text" 
-                    placeholder="Shasanko"
-                    className="w-full bg-zinc-50 border border-zinc-100 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium"
+                    placeholder="Enter your first name"
+                    className="w-full bg-black text-white placeholder:text-zinc-500 border border-zinc-800 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium"
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-black ml-1">Last Name</label>
                   <input 
                     type="text" 
-                    placeholder="Das"
-                    className="w-full bg-zinc-50 border border-zinc-100 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium"
+                    placeholder="Enter your last name"
+                    className="w-full bg-black text-white placeholder:text-zinc-500 border border-zinc-800 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium"
                   />
                 </div>
               </div>
@@ -63,8 +68,8 @@ const ContactPage = () => {
                 <label className="text-xs font-black uppercase tracking-widest text-black ml-1">Email</label>
                 <input 
                   type="email" 
-                  placeholder="uiuxshasankodas@gmail.com"
-                  className="w-full bg-zinc-50 border border-zinc-100 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium"
+                  placeholder="Enter your email address"
+                  className="w-full bg-black text-white placeholder:text-zinc-500 border border-zinc-800 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium"
                 />
               </div>
 
@@ -72,33 +77,39 @@ const ContactPage = () => {
                 <label className="text-xs font-black uppercase tracking-widest text-black ml-1">Message</label>
                 <textarea 
                   rows={4}
-                  placeholder="Type something..."
-                  className="w-full bg-zinc-50 border border-zinc-100 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium resize-none"
+                  placeholder="Tell us how we can help you..."
+                  className="w-full bg-black text-white placeholder:text-zinc-500 border border-zinc-800 rounded-xl px-4 py-4 focus:outline-none focus:border-red-600 transition-colors font-medium resize-none"
                 />
               </div>
 
               <div className="space-y-4">
                 <label className="flex items-start gap-3 cursor-pointer group">
-                  <input type="checkbox" className="mt-1 w-4 h-4 rounded border-zinc-300 text-red-600 focus:ring-red-600 cursor-pointer" />
-                  <span className="text-xs text-zinc-500 font-semibold group-hover:text-zinc-700 transition-colors">
-                    I agree to receive other communication messages.<span className="text-red-600 ml-0.5">*</span>
+                  <input type="checkbox" className="mt-1 w-5 h-5 rounded border-zinc-300 text-red-600 focus:ring-red-600 cursor-pointer" />
+                  <span className="text-sm text-zinc-700 font-bold group-hover:text-black transition-colors">
+                    I agree to receive communication from Dine360 regarding product updates and services.
                   </span>
                 </label>
                 <label className="flex items-start gap-3 cursor-pointer group">
-                  <input type="checkbox" className="mt-1 w-4 h-4 rounded border-zinc-300 text-red-600 focus:ring-red-600 cursor-pointer" />
-                  <span className="text-xs text-zinc-500 font-semibold group-hover:text-zinc-700 transition-colors">
-                    I give my consent to Dine360 to store my data.<span className="text-red-600 ml-0.5">*</span>
+                  <input type="checkbox" className="mt-1 w-5 h-5 rounded border-zinc-300 text-red-600 focus:ring-red-600 cursor-pointer" />
+                  <span className="text-sm text-zinc-700 font-bold group-hover:text-black transition-colors">
+                    I consent to Dine360 storing my submitted information to respond to my enquiry.
                   </span>
                 </label>
               </div>
 
-              <p className="text-[10px] leading-relaxed text-zinc-400 font-medium">
-                Dine360, a project of Dine360ads.com, is committed to protecting and respecting your privacy according to our <a href="#" className="text-zinc-600 underline">Privacy Policy</a>. From time to time we would like to contact you about our products and services that may be of your interest.
+              <p className="text-xs leading-relaxed text-zinc-600 font-bold">
+                Dine360 respects your privacy. Your information will only be used to respond to your request and provide relevant product updates.
               </p>
 
-              <button className="bg-red-600 text-white px-10 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-[0.98] shadow-lg shadow-red-600/20">
-                Start for Free
-              </button>
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <button className="w-full sm:w-auto bg-red-600 text-white px-10 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] hover:bg-red-700 transition-all active:scale-[0.98] shadow-lg shadow-red-600/20">
+                  Start Free Trial
+                </button>
+                <span className="text-zinc-400 font-bold text-xs uppercase tracking-widest">or</span>
+                <button className="w-full sm:w-auto bg-white border-2 border-red-600 text-red-600 px-10 py-4 rounded-xl font-black text-xs uppercase tracking-[0.2em] hover:bg-red-50 transition-all active:scale-[0.98]">
+                  Send Message
+                </button>
+              </div>
             </form>
           </div>
 
@@ -107,7 +118,7 @@ const ContactPage = () => {
             <div className="relative rounded-[32px] overflow-hidden bg-zinc-100 aspect-[4/3] group">
               <Image 
                 src="https://images.pexels.com/photos/7703651/pexels-photo-7703651.jpeg"
-                alt="Contact Us"
+                alt="Quick Contact"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -125,9 +136,10 @@ const ContactPage = () => {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-zinc-900 mb-1">Quick Contact</h4>
-                  <p className="text-zinc-500 font-medium text-sm">Email: support@dine360ads.com</p>
-                  <p className="text-zinc-500 font-medium text-sm">Sales: sales@dine360ads.com</p>
+                  <h4 className="font-bold text-zinc-900 mb-1 uppercase tracking-wider text-xs">Quick Contact</h4>
+                  <p className="text-zinc-500 font-medium text-sm mb-1">Email our support team anytime and we’ll assist you with onboarding, setup, or product questions.</p>
+                  <p className="text-zinc-900 font-bold text-sm">Email:</p>
+                  <p className="text-red-600 font-bold text-sm">support@dine360.com</p>
                 </div>
               </div>
 
@@ -136,9 +148,12 @@ const ContactPage = () => {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-zinc-900 mb-1">Phone Number</h4>
-                  <p className="text-zinc-500 font-medium text-sm">Sales: +91 93608 24706</p>
-                  <p className="text-zinc-500 font-medium text-sm">Support: +91 95431 32906</p>
+                  <h4 className="font-bold text-zinc-900 mb-1 uppercase tracking-wider text-xs">Phone Number</h4>
+                  <p className="text-zinc-500 font-medium text-sm mb-1">Speak directly with our customer success team for immediate assistance.</p>
+                  <div className="space-y-0.5">
+                    <p className="text-zinc-500 font-medium text-sm"><span className="text-zinc-900 font-bold">Sales: </span>+91 90000 00000</p>
+                    <p className="text-zinc-500 font-medium text-sm"><span className="text-zinc-900 font-bold">Support: </span>+91 90000 00001</p>
+                  </div>
                 </div>
               </div>
 
@@ -147,18 +162,26 @@ const ContactPage = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-zinc-900 mb-1">Headquarter</h4>
-                  <p className="text-zinc-500 font-medium text-sm">Dine360 Headquarters, Chennai, Tamil Nadu, India</p>
+                  <h4 className="font-bold text-zinc-900 mb-1 uppercase tracking-wider text-xs">Headquarters</h4>
+                  <div className="text-zinc-500 font-medium text-sm space-y-0.5">
+                    <p>Dine360 Technologies Pvt Ltd</p>
+                    <p>Innovation Hub</p>
+                    <p>Chennai, Tamil Nadu</p>
+                    <p>India</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-black text-zinc-900">Follow us</h3>
-              <div className="flex items-center gap-4">
-                {[Facebook, Twitter, Instagram, Linkedin, Youtube].map((Icon, idx) => (
-                  <a key={idx} href="#" className="w-10 h-10 rounded-lg bg-red-600 flex items-center justify-center text-white hover:bg-red-700 transition-all hover:-translate-y-1 shadow-md shadow-red-600/10">
-                    <Icon className="w-4 h-4" />
+              <div className="space-y-3 pb-4">
+                <h3 className="text-2xl font-black text-zinc-900 uppercase tracking-tight">FOLLOW US</h3>
+                <p className="text-zinc-500 font-medium text-sm">Stay connected with us for product updates, restaurant insights, and new features.</p>
+              </div>
+              <div className="flex items-center gap-4 pb-8">
+                {[Linkedin, Instagram, Youtube, Twitter].map((Icon, idx) => (
+                  <a key={idx} href="#" className="w-12 h-12 rounded-xl bg-red-600 flex items-center justify-center text-white hover:bg-zinc-900 transition-all hover:-translate-y-1 shadow-lg shadow-red-600/10">
+                    <Icon className="w-5 h-5" />
                   </a>
                 ))}
               </div>

@@ -67,7 +67,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="relative w-full bg-brand-cream py-20 lg:py-32 overflow-hidden flex items-center justify-center text-black">
+    <section className="relative w-full bg-brand-cream py-32 lg:py-32 overflow-hidden flex items-center justify-center text-black">
        
        {/* Background Paper Texture Overlay (Optional) */}
        <div className="absolute inset-0 opacity-40 mix-blend-multiply z-0 pointer-events-none" />
