@@ -28,13 +28,13 @@ const InventoryManagementPage = () => {
       <Navbar />
 
       <main>
-        {/* DESIGN FROM IMAGE SECTION */}
+        {/* SECTION 1: INVENTORY MANAGEMENT */}
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto text-center mb-20 px-4">
-            <h2 className="text-4xl font-bold text-zinc-950 mb-4 uppercase tracking-tight">Inventory Management</h2>
+            <h2 className="text-4xl font-bold text-zinc-950 mb-4 uppercase tracking-tight">INVENTORY MANAGEMENT</h2>
             <div className="w-20 h-1.5 bg-red-600 mx-auto mb-6"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
-              Maintain perfect stock levels and minimize waste with our automated inventory tracking system designed specifically for high-volume restaurants.
+              Take control of your restaurant supplies with real-time inventory tracking that prevents shortages and reduces waste.
             </p>
           </div>
 
@@ -45,31 +45,31 @@ const InventoryManagementPage = () => {
               <div className="w-16 h-16 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6 text-red-600 transition-colors group-hover:bg-red-600 group-hover:text-white">
                 <Layers className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Stock Intelligence</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Real-Time Stock Tracking</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Automated stock counting and low-inventory alerts ensure you never run out of critical ingredients during a rush.
+                Monitor ingredient levels as orders are placed so you always know what’s available in your kitchen.
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="flex flex-col items-center p-10 rounded-2xl border border-zinc-800 bg-zinc-950 transition-all duration-300 hover:border-red-600/30 hover:shadow-xl hover:shadow-red-600/5 group">
               <div className="w-16 h-16 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6 text-red-600 transition-colors group-hover:bg-red-600 group-hover:text-white">
-                <Trash2 className="w-8 h-8" />
+                <Zap className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Waste Reduction</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Smart Stock Alerts</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Track expiration dates and portion control to significantly reduce food waste and improve your bottom line.
+                Receive automatic alerts when ingredients are running low to avoid service interruptions.
               </p>
             </div>
 
             {/* Feature 3 */}
             <div className="flex flex-col items-center p-10 rounded-2xl border border-zinc-800 bg-zinc-950 transition-all duration-300 hover:border-red-600/30 hover:shadow-xl hover:shadow-red-600/5 group">
               <div className="w-16 h-16 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6 text-red-600 transition-colors group-hover:bg-red-600 group-hover:text-white">
-                <Repeat className="w-8 h-8" />
+                <Trash2 className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Vendor Sync</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Waste Reduction</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Connect directly with your suppliers. Generate purchase orders automatically based on real-time usage and historical data.
+                Track ingredient usage across menu items to minimize food waste and improve profitability.
               </p>
             </div>
           </div>
@@ -104,15 +104,15 @@ const InventoryManagementPage = () => {
             {/* Right: Text Content */}
             <div className="space-y-6 order-1 lg:order-2">
               <span className="inline-block px-5 py-1.5 bg-red-50 text-red-600 rounded-full text-xs font-bold uppercase tracking-wider border border-red-100">
-                Stock Control
+                INVENTORY CONTROL
               </span>
               
               <h2 className="text-4xl lg:text-5xl font-bold text-zinc-950 leading-tight">
-                Effortless Inventory <br/> Control & Sync.
+                Know What’s in Your <br/> Kitchen at All Times
               </h2>
               
               <p className="text-lg text-zinc-600 leading-relaxed">
-                Take the guesswork out of ordering. Our intelligent inventory system tracks every gram and milliliter in real-time, syncing across all your branches and sales channels instantly.
+                Dine360 Inventory connects directly with your POS and kitchen systems, automatically updating stock levels every time an order is placed. This gives restaurant owners complete visibility into ingredient consumption and purchasing needs.
               </p>
               
               <div className="grid grid-cols-2 gap-4 pt-4">
@@ -120,25 +120,25 @@ const InventoryManagementPage = () => {
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Real-time alerts</span>
+                  <span className="text-sm font-bold text-zinc-700">Real-time inventory updates</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Waste reduction</span>
+                  <span className="text-sm font-bold text-zinc-700">Low stock alerts</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Supplier mgmt</span>
+                  <span className="text-sm font-bold text-zinc-700">Ingredient-level tracking</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Low stock warns</span>
+                  <span className="text-sm font-bold text-zinc-700">Automated inventory reports</span>
                 </div>
               </div>
 
@@ -150,9 +150,8 @@ const InventoryManagementPage = () => {
           </div>
         </section>
 
-        {/* NEW SECTION 1: PROVEN RESULTS (Dark) */}
-        <section className="py-24 bg-zinc-900 text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-[linear-gradient(45deg,#ff0000_1px,transparent_1px),linear-gradient(-45deg,#ff0000_1px,transparent_1px)] bg-[size:40px_40px]" />
+        {/* SECTION 2: SMART STOCK MANAGEMENT */}
+        <section className="py-24 bg-zinc-950 text-white overflow-hidden">
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="text-center mb-16">
               <motion.span 
@@ -161,7 +160,7 @@ const InventoryManagementPage = () => {
                 viewport={{ once: true }}
                 className="text-red-500 font-bold uppercase tracking-widest text-sm"
               >
-                Proven Impact
+                Smart Stock Management
               </motion.span>
               <motion.h2 
                 initial={{ opacity: 0, y: 10 }}
@@ -170,7 +169,7 @@ const InventoryManagementPage = () => {
                 transition={{ delay: 0.1 }}
                 className="text-4xl md:text-5xl font-bold mt-3 mb-6"
               >
-                Numbers Don&apos;t Lie
+                Automated Replenishment & Costing
               </motion.h2>
               <motion.p 
                 initial={{ opacity: 0, y: 10 }}
@@ -179,15 +178,14 @@ const InventoryManagementPage = () => {
                 transition={{ delay: 0.2 }}
                 className="text-zinc-400 max-w-2xl mx-auto text-lg"
               >
-                See how automated inventory management transforms efficiency and profitability for restaurants worldwide.
+                Never run out of key ingredients. Dine360 automatically tracks usage and can generate reorder lists based on your specific par levels.
               </motion.p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
-                { value: "30%", label: "Reduction in Food Waste", icon: Trash2 },
-                { value: "15hrs", label: "Saved Weekly on Counts", icon: Clock },
-                { value: "12%", label: "Increase in Profit Margins", icon: TrendingUp }
+                { value: "$14,250", label: "Total Stock Value Tracking", icon: PackageCheck },
+                { value: "-18.4%", label: "Waste Reduction Impact", icon: TrendingUp }
               ].map((stat, i) => (
                 <motion.div
                   key={i}
@@ -205,11 +203,17 @@ const InventoryManagementPage = () => {
                 </motion.div>
               ))}
             </div>
+            
+            <div className="mt-12 text-center">
+              <p className="text-zinc-500 max-w-2xl mx-auto italic">
+                Calculate the exact cost of every dish on your menu. See how fluctuating supplier prices impact your profit margins in real-time.
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* NEW SECTION 2: SMART FORECASTING (Light) */}
-        <section className="py-24 px-6 bg-zinc-50 overflow-hidden">
+        {/* SECTION 3: EVERYTHING YOU NEED TO CONTROL INVENTORY */}
+        <section className="py-24 px-6 bg-white overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <motion.div 
@@ -221,22 +225,22 @@ const InventoryManagementPage = () => {
               >
                 <div>
                   <span className="text-red-600 font-bold uppercase tracking-widest text-sm mb-2 block">
-                    Future Ready
+                    Control Everything
                   </span>
                   <h2 className="text-4xl md:text-5xl font-bold text-zinc-950 mb-6 leading-tight">
-                    Predict Demand. <br/> Prevent Outages.
+                    Everything You Need to <br/> Control Inventory.
                   </h2>
                   <p className="text-lg text-zinc-600 leading-relaxed mb-6">
-                    Our AI-driven forecasting analyzes historical sales data, seasonal trends, and local events to recommend exactly what to order and when. Never tell a customer "we're out" again.
+                    Balance inventory across multiple restaurant locations with centralized control and easy inter-branch transfers. Our intelligent platform gives you the oversight you need.
                   </p>
                 </div>
 
                 <div className="space-y-4">
                   {[
-                    "Automated Purchase Orders based on par levels",
-                    "Supplier price tracking and history",
-                    "Multi-location transfer management",
-                    "Recipe costing and menu engineering"
+                    "Multi-Location Stock management",
+                    "Supplier Management & delivery tracking",
+                    "Variance Reporting (Actual vs Theoretical)",
+                    "Direct POS integration for live tracking"
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-zinc-950 border border-zinc-800 shadow-sm hover:shadow-md transition-shadow">
                       <div className="mt-1 w-6 h-6 rounded-full bg-red-600/10 flex items-center justify-center shrink-0">
@@ -265,35 +269,22 @@ const InventoryManagementPage = () => {
                     <div className="flex items-center justify-between pb-6 border-b border-zinc-100">
                       <div>
                         <div className="h-2 w-24 bg-zinc-200 rounded mb-2" />
-                        <div className="h-4 w-32 bg-zinc-900 rounded" />
+                        <div className="h-4 w-48 bg-zinc-900 rounded" />
                       </div>
                       <div className="h-10 w-10 rounded-full bg-red-100 flex items-center justify-center text-red-600">
-                        <PackageCheck className="w-5 h-5" />
+                        <Layers className="w-5 h-5" />
                       </div>
                     </div>
                     
                     <div className="space-y-4">
-                      {[1, 2, 3].map((k) => (
-                        <div key={k} className="flex items-center gap-4">
-                          <div className="w-12 h-12 rounded-lg bg-zinc-50 border border-zinc-100 flex items-center justify-center text-zinc-300">
-                            <Layers className="w-6 h-6" />
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex justify-between mb-2">
-                              <div className="h-3 w-20 bg-zinc-800 rounded" />
-                              <div className="h-3 w-12 bg-red-100 text-red-600 text-[10px] flex items-center justify-center font-bold rounded">Low Stock</div>
-                            </div>
-                            <div className="h-2 w-full bg-zinc-100 rounded-full overflow-hidden">
-                              <div className="h-full bg-red-500 w-[20%]" />
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+                      <p className="text-zinc-600 text-sm italic font-medium">
+                        "Dine360 Inventory transformed how we manage our food costs. We saved over 15% on monthly supplies just by identifying where our waste was coming from."
+                      </p>
                     </div>
 
                     <div className="mt-4 pt-4 border-t border-zinc-100 flex justify-between items-center">
-                      <div className="h-3 w-24 bg-zinc-200 rounded" />
-                      <div className="h-8 w-28 bg-zinc-900 rounded-lg shadow-lg shadow-zinc-900/20" />
+                      <div className="h-4 w-32 bg-zinc-200 rounded" />
+                      <div className="h-8 w-28 bg-red-600 rounded-lg shadow-lg shadow-red-600/20 flex items-center justify-center text-white text-[10px] font-bold">LIVE SYNC</div>
                     </div>
                   </div>
                 </div>

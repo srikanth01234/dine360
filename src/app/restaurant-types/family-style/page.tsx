@@ -8,14 +8,14 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
-import { Check, Dot, Layout, TrendingUp, Smartphone, Zap, RefreshCw, Clock, Target } from 'lucide-react'
+import { Check, Dot, Layout, TrendingUp, Smartphone, Zap, RefreshCw, Clock, Target, Users, Calendar, Menu, AreaChart } from 'lucide-react'
 
 const CARD_IMAGES = [
-  "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1504939097-451b0c9e1f44?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600",
   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=600",
   "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=600",
 ]
 
 const FamilyStylePage = () => {
@@ -33,7 +33,7 @@ const FamilyStylePage = () => {
               {[1, 2, 3].map((i) => (
                 <div key={i} className="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-zinc-200 overflow-hidden relative">
                   <Image
-                    src={`https://randomuser.me/api/portraits/thumb/men/${20 + i}.jpg`}
+                    src={`https://randomuser.me/api/portraits/thumb/men/${30 + i}.jpg`}
                     alt="User"
                     fill
                     className="object-cover"
@@ -41,22 +41,22 @@ const FamilyStylePage = () => {
                 </div>
               ))}
               <span className="ml-3 text-zinc-600 text-xs font-medium bg-zinc-100 px-2.5 py-1 rounded-full">
-                Join 3,200+ Restaurants
+                Join 2,460+ Restaurants
               </span>
             </div>
 
             <div className="inline-flex items-center gap-2 text-red-600 font-bold tracking-widest uppercase text-xs">
-              <div className="h-[1px] w-6 bg-red-500" />
-              Bringing Families Together
+              <div className="h-px w-6 bg-red-500" />
+              FAMILY STYLE RESTAURANT
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-900 leading-[1.1]">
-              Family-Style Restaurant <br />
-              <span className="italic font-serif font-light text-zinc-800">Built for Warm Dining</span>
+              Simplify Your <br />
+              <span className="italic font-serif font-light text-zinc-800">Family Style Restaurant Operations</span>
             </h1>
 
             <p className="text-lg text-zinc-600 max-w-lg leading-relaxed">
-              Manage large groups, shared plates, and family deals with ease. Menumium is purpose-built for the warm, welcoming pace of family-style dining.
+              Serve large groups smoothly and deliver memorable dining experiences with a system built for busy family restaurants. Dine360 helps manage table seating, group orders, kitchen coordination, and billing from one unified platform.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mt-1">
@@ -64,7 +64,7 @@ const FamilyStylePage = () => {
                 href="/contact"
                 className="bg-red-600 hover:bg-red-700 text-white px-7 py-3.5 rounded-xl font-semibold text-base transition-all shadow-lg shadow-red-600/20 active:scale-95"
               >
-                Start Free Now
+                Start Today
               </Link>
               <Link
                 href="/contact"
@@ -75,20 +75,18 @@ const FamilyStylePage = () => {
             </div>
 
             <div className="pt-6 border-t border-zinc-100 mt-4 flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-red-500" />
-                <span className="text-xs font-semibold text-zinc-500">Group Booking & Shared Plate Management</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-red-300" />
-                <span className="text-xs font-semibold text-zinc-500">Family Deals, Loyalty & Table Tracking</span>
+               <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">Trusted by Industry Leaders</span>
+              <div className="flex items-center gap-6 grayscale opacity-60">
+                <span className="text-sm font-bold text-zinc-400">UberEats</span>
+                <span className="text-sm font-bold text-zinc-400">DoorDash</span>
+                <span className="text-sm font-bold text-zinc-400">GrubHub</span>
               </div>
             </div>
           </div>
 
           {/* Right Content - Cards */}
-          <div className="relative h-[500px] w-full flex items-center justify-center lg:justify-end" style={{ perspective: '1000px' }}>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-gradient-to-tr from-red-50/50 to-orange-50/50 rounded-full blur-3xl -z-10" />
+          <div className="relative h-125 w-full flex items-center justify-center lg:justify-end" style={{ perspective: '1000px' }}>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-linear-to-tr from-red-50/50 to-orange-50/50 rounded-full blur-3xl -z-10" />
 
             <div className="relative w-full h-full max-w-md mx-auto lg:mr-0">
               <motion.div
@@ -98,15 +96,10 @@ const FamilyStylePage = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <Image src={CARD_IMAGES[0]} alt="Family Dining" fill className="object-cover" />
-                <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
+                <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-linear-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
                   <div className="relative z-10">
-                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Groups</p>
-                    <p className="text-white font-bold text-2xl">+60%</p>
-                  </div>
-                  <div className="absolute bottom-0 left-0 w-full h-16 text-red-500/90">
-                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" className="w-full h-full">
-                      <path fill="currentColor" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                    </svg>
+                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Efficiency</p>
+                    <p className="text-white font-bold text-2xl">85%</p>
                   </div>
                 </div>
               </motion.div>
@@ -117,16 +110,11 @@ const FamilyStylePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <Image src={CARD_IMAGES[1]} alt="Shared Plates" fill className="object-cover" />
-                <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
+                <Image src={CARD_IMAGES[1]} alt="Service" fill className="object-cover" />
+                <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-linear-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
                   <div className="relative z-10">
                     <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Satisfaction</p>
-                    <p className="text-white font-bold text-2xl">98%</p>
-                  </div>
-                  <div className="absolute bottom-0 left-0 w-full h-16 text-orange-500/90">
-                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" className="w-full h-full">
-                      <path fill="currentColor" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                    </svg>
+                    <p className="text-white font-bold text-2xl">+30%</p>
                   </div>
                 </div>
               </motion.div>
@@ -137,16 +125,11 @@ const FamilyStylePage = () => {
                 animate={{ opacity: 1, x: 0, rotate: 12 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                <Image src={CARD_IMAGES[2]} alt="Restaurant Interior" fill className="object-cover" />
-                <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
+                <Image src={CARD_IMAGES[2]} alt="Dining Floor" fill className="object-cover" />
+                <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-linear-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
                   <div className="relative z-10">
-                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Revenue Up</p>
-                    <p className="text-white font-bold text-2xl">+45%</p>
-                  </div>
-                  <div className="absolute bottom-0 left-0 w-full h-16 text-red-500/90">
-                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" className="w-full h-full">
-                      <path fill="currentColor" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                    </svg>
+                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Secure</p>
+                    <p className="text-white font-bold text-2xl">100%</p>
                   </div>
                 </div>
               </motion.div>
@@ -164,9 +147,9 @@ const FamilyStylePage = () => {
             viewport={{ once: true }}
             className="flex items-center justify-center gap-2 mb-6"
           >
-            <div className="h-[1px] w-8 bg-red-500" />
-            <span className="text-red-600 font-bold tracking-widest uppercase text-xs">Big Tables, Bigger Smiles</span>
-            <div className="h-[1px] w-8 bg-red-500" />
+            <div className="h-px w-8 bg-red-500" />
+            <span className="text-red-600 font-bold tracking-widest uppercase text-xs">BUILT FOR SHARED DINING</span>
+            <div className="h-px w-8 bg-red-500" />
           </motion.div>
 
           <motion.h2
@@ -176,8 +159,8 @@ const FamilyStylePage = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-bold text-zinc-900 mb-6 leading-tight"
           >
-            More Covers, Less Chaos — <br className="hidden md:block" />
-            <span className="text-red-600">Menumium Powers It All</span>
+            Transform Your Family Style Restaurant <br className="hidden md:block" />
+            <span className="text-red-600">With Dine360 Restaurant Software</span>
           </motion.h2>
 
           <motion.p
@@ -187,218 +170,131 @@ const FamilyStylePage = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-zinc-600 max-w-2xl mx-auto"
           >
-            From booking a table for 20 to serving shared platters, Menumium handles the unique demands of family-style dining with ease.
+            Family restaurants handle large tables, shared dishes, and high guest turnover. Dine360 helps staff manage orders, seating, and service efficiently so every family dining experience runs smoothly.
           </motion.p>
         </div>
 
-        <div className="relative flex justify-center items-center min-h-[600px]">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-full -z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {[
+            { label: "Service Efficiency", value: "85%", desc: "Improve coordination between service staff and kitchen teams." },
+            { label: "Customer Satisfaction", value: "30%", desc: "Deliver better dining experiences with organized service." },
+            { label: "Secure Payment System", value: "100%", desc: "Flexible billing with secure payment processing." }
+          ].map((stat, i) => (
             <motion.div
-              initial={{ opacity: 0, rotate: -15, scale: 0.8 }}
-              whileInView={{ opacity: 1, rotate: -5, scale: 1 }}
-              viewport={{ once: true }}
-              className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-red-100/50 rounded-[4rem] -rotate-12"
-            />
-            <motion.div
-              initial={{ opacity: 0, rotate: 15, scale: 0.8 }}
-              whileInView={{ opacity: 1, rotate: 5, scale: 1 }}
-              viewport={{ once: true }}
-              className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-zinc-200/50 rounded-[4rem] rotate-12"
-            />
-          </div>
-
-          <div className="relative z-10 w-full max-w-4xl flex justify-center">
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative w-64 h-[500px] bg-zinc-900 rounded-[3rem] border-[8px] border-zinc-800 shadow-2xl overflow-hidden flex flex-col"
+              transition={{ delay: i * 0.1 }}
+              className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-zinc-100 text-center"
             >
-              <div className="h-6 w-full flex justify-between px-6 pt-2">
-                <div className="text-[10px] text-zinc-400">9:41</div>
-                <div className="flex gap-1.5 h-2 items-center">
-                  <div className="w-3 h-2 bg-zinc-600 rounded-full" />
-                  <div className="w-4 h-2 bg-zinc-600 rounded-full" />
-                </div>
-              </div>
-              <div className="p-4 flex-1 flex flex-col pt-8">
-                <div className="w-12 h-12 rounded-2xl bg-red-500 mb-4 mx-auto flex items-center justify-center text-white font-bold text-xl">M</div>
-                <div className="text-center mb-6">
-                  <h3 className="text-white font-bold text-lg">Family Hub</h3>
-                  <p className="text-zinc-500 text-[10px]">Group Dining Manager Active</p>
-                </div>
-                <div className="space-y-3">
-                  {[1, 2, 3, 4].map(i => (
-                    <div key={i} className="h-10 w-full bg-zinc-800/50 rounded-xl animate-pulse" />
-                  ))}
-                </div>
-              </div>
+              <p className="text-red-600 font-bold text-4xl mb-2">{stat.value}</p>
+              <h4 className="text-zinc-900 font-bold text-lg mb-2">{stat.label}</h4>
+              <p className="text-zinc-500 text-sm">{stat.desc}</p>
             </motion.div>
-
-            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="absolute -left-12 top-20 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 max-w-[220px]">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="p-2 bg-red-50 rounded-lg text-red-600"><TrendingUp className="w-5 h-5" /></div>
-                <span className="text-lg font-bold text-zinc-900">👨‍👩‍👧</span>
-              </div>
-              <p className="text-sm font-bold text-zinc-800 mb-1">Group Bookings</p>
-              <p className="text-[11px] text-zinc-500 leading-relaxed">Handle parties of all sizes with zero headaches</p>
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }} className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 w-full max-w-[280px] z-20">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600"><Check className="w-6 h-6" /></div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xl font-bold text-zinc-900">🍽️</span>
-                    <span className="text-[10px] bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-bold">LIVE</span>
-                  </div>
-                  <p className="text-sm font-bold text-zinc-800">Shared Plates</p>
-                  <p className="text-[11px] text-zinc-500 mt-1">Track platter orders and refills in real-time</p>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.5 }} className="absolute -right-12 top-48 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 max-w-[220px]">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="p-2 bg-orange-50 rounded-lg text-orange-600"><TrendingUp className="w-5 h-5" /></div>
-                <span className="text-lg">🎉</span>
-              </div>
-              <p className="text-sm font-bold text-zinc-800 mb-1">Family Deals</p>
-              <p className="text-[11px] text-zinc-500">Promotions built for groups that drive repeat visits</p>
-            </motion.div>
-
-            <motion.div animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 4 }} className="absolute -left-24 top-1/2 w-16 h-16 bg-white rounded-full shadow-lg flex flex-col items-center justify-center border border-zinc-100">
-              <Layout className="w-6 h-6 text-red-500" />
-              <span className="text-[8px] font-bold text-zinc-400 mt-1">Dashboard</span>
-            </motion.div>
-
-            <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 3.5, delay: 0.5 }} className="absolute -right-24 top-20 w-16 h-16 bg-white rounded-full shadow-lg flex flex-col items-center justify-center border border-zinc-100">
-              <Smartphone className="w-6 h-6 text-zinc-800" />
-              <span className="text-[8px] font-bold text-zinc-400 mt-1">App</span>
-            </motion.div>
-
-            <motion.div animate={{ y: [0, -15, 0] }} transition={{ repeat: Infinity, duration: 5, delay: 1 }} className="absolute -right-10 -bottom-10 w-20 h-20 bg-zinc-900 rounded-full shadow-2xl flex flex-col items-center justify-center border border-zinc-800">
-              <Dot className="w-10 h-10 text-red-500 animate-pulse" />
-              <span className="text-[8px] font-bold text-zinc-400 -mt-2">Live Cloud</span>
-            </motion.div>
-          </div>
+          ))}
         </div>
-      </section>
-
-      {/* All-in-One Banner */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-[1px] w-8 bg-red-500" />
-            <span className="text-red-400 font-bold tracking-widest uppercase text-xs">All-in-One Family Dining Solution</span>
-            <div className="h-[1px] w-8 bg-red-500" />
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-            More Tables, Happier Families — <br className="hidden md:block" />Everything Your Restaurant Needs
-          </h2>
-          <p className="text-zinc-400 max-w-2xl mx-auto text-sm leading-relaxed">
-            Menumium provides a complete family-style restaurant solution — group reservations, shared plate tracking, family promotions, and loyal guest management all in one platform.
-          </p>
-        </motion.div>
       </section>
 
       {/* Performance Journey Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto bg-white">
         <div className="text-center mb-16">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-zinc-400 font-bold uppercase tracking-[0.2em] text-[10px] mb-3">
-            Dine360 Challenging
+            FAMILY DINING PERFORMANCE
           </motion.div>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
-            The Performance Journey
+            The Shared Dining Efficiency Journey
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="text-zinc-500 max-w-2xl mx-auto text-sm">
-            From the moment a family walks in to the moment they leave, Menumium ensures every step is seamless, warm, and efficient.
+            Family-style restaurants require coordination for large tables and multiple dishes. Dine360 ensures smooth order management and efficient table service.
           </motion.p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center relative">
-            <div className="hidden md:block absolute left-0 top-0 w-[55%] h-full border-t-[10px] border-l-[10px] border-b-[10px] border-zinc-800 rounded-l-[100px] z-0"></div>
+          <div className="flex flex-col md:flex-row items-center relative md:-mt-2.5">
+            <div className="hidden md:block absolute left-0 top-0 w-[55%] h-full border-t-10 border-l-10 border-b-10 border-zinc-800 rounded-l-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pl-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-l-[80px] md:rounded-r-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[0]} alt="Group Booking" fill className="object-cover" />
+                <Image src={CARD_IMAGES[0]} alt="Group Order" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
               <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Zap className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Effortless Group Booking</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Accept reservations for large groups online or at the counter. Assign the right tables automatically and ensure everyone has a seat when they arrive.</p>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Group Order Management</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Handle large family orders easily without confusion.</p>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center relative md:-mt-[10px]">
-            <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-[10px] border-b-[10px] border-zinc-800 rounded-r-[100px] z-0"></div>
+          <div className="flex flex-col md:flex-row-reverse items-center relative md:-mt-2.5">
+            <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-10 border-b-10 border-zinc-800 rounded-r-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pr-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-r-[80px] md:rounded-l-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[1]} alt="Shared Plates" fill className="object-cover" />
+                <Image src={CARD_IMAGES[1]} alt="Communication" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
               <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><RefreshCw className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Shared Plate Management</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Track shared platters and refill orders in real-time. Ensure the kitchen and floor team are always in sync, no matter how big the table.</p>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Instant Kitchen Communication</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Orders move instantly from servers to the kitchen.</p>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center relative md:-mt-[10px]">
-            <div className="hidden md:block absolute left-0 top-0 w-[55%] h-full border-l-[10px] border-b-[10px] border-zinc-800 rounded-l-[100px] z-0"></div>
+          <div className="flex flex-col md:flex-row items-center relative md:-mt-2.5">
+            <div className="hidden md:block absolute left-0 top-0 w-[55%] h-full border-l-10 border-b-10 border-zinc-800 rounded-l-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pl-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-l-[80px] md:rounded-r-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[3]} alt="Family Deals" fill className="object-cover" />
+                <Image src={CARD_IMAGES[2]} alt="Table Coord" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
-              <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Clock className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Family Deal Promotions</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Create and manage family meal bundles, weekend specials, and group discounts. Attract more families and increase your average check value.</p>
+              <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Users className="w-5 h-5" /></div>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Table Coordination</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Manage large tables and seating arrangements efficiently.</p>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse items-center relative md:-mt-[10px]">
-            <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-[10px] border-b-[10px] border-zinc-800 rounded-r-[100px] z-0"></div>
+          <div className="flex flex-col md:flex-row-reverse items-center relative md:-mt-2.5">
+             <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-10 border-b-10 border-zinc-800 rounded-r-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pr-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-r-[80px] md:rounded-l-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[4]} alt="Loyalty" fill className="object-cover" />
+                <Image src={CARD_IMAGES[3]} alt="Billing" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
               <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Target className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Build Loyal Family Guests</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Reward returning families with points, birthday perks, and exclusive member benefits. Turn every visit into a reason to come back again.</p>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Accurate Billing</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Split bills easily between guests and families.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Group Reservations Section */}
+      {/* POS Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-zinc-50/50 rounded-[2.5rem]">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 order-2 lg:order-1">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-10 bg-red-500 relative">
+              <div className="h-0.5 w-10 bg-red-500 relative">
                 <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
               </div>
-              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">Group Management</span>
+              <span className="text-red-500 font-bold tracking-wider uppercase text-xs flex items-center gap-2">
+                POS SYSTEM
+              </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-              Big Groups? <br /> No Problem at All
+              Designed for Busy <br /> Dining Rooms
             </h2>
             <p className="text-base text-zinc-600 leading-relaxed">
-              Whether it&apos;s a birthday party of 15 or a festive family gathering of 40, Menumium&apos;s group management tools keep everything running smoothly.
+              Handle large group orders easily with an intuitive POS system.
             </p>
             <ul className="space-y-4">
               {[
-                "Auto-assign tables and merge seating for large party bookings in seconds.",
-                "Split bills any way your guests prefer — per person, per family, or by dish.",
-                "Send group confirmation messages and updates directly to the organiser."
+                "Process large orders quickly",
+                "Track orders by table",
+                "Split bills between guests"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
-                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                  <div className="mt-1 shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
                     <Check className="w-3.5 h-3.5" />
                   </div>
                   <span className="text-zinc-600 text-sm leading-relaxed">{point}</span>
@@ -407,122 +303,60 @@ const FamilyStylePage = () => {
             </ul>
             <div className="pt-4">
               <Link href="/contact" className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg shadow-red-600/20 active:scale-95">
-                Get Started Now
+                Get Started
               </Link>
             </div>
           </div>
 
-          <div className="relative h-[400px] w-full order-1 lg:order-2">
+          <div className="relative h-100 w-full order-1 lg:order-2">
             <motion.div
               className="absolute inset-0 bg-white rounded-3xl shadow-xl overflow-hidden border border-zinc-100 p-6"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
             >
-              <div className="flex flex-col h-full">
-                <div className="flex items-center justify-between mb-6">
-                  <h3 className="font-bold text-zinc-900 text-sm">Group Bookings Today</h3>
-                  <span className="text-[9px] font-bold px-2 py-0.5 bg-red-100 text-red-700 rounded-full">Live</span>
-                </div>
-                <div className="flex-1 space-y-3">
-                  {[
-                    { name: 'Tan Family (10)', time: '6:30 PM', tables: 'T-01, T-02' },
-                    { name: 'Birthday Party (18)', time: '7:00 PM', tables: 'Hall A' },
-                    { name: 'Wong Group (6)', time: '8:15 PM', tables: 'T-07' }
-                  ].map((res, i) => (
-                    <div key={i} className="p-3.5 bg-zinc-50 rounded-2xl border border-zinc-100 flex items-center justify-between">
-                      <div>
-                        <p className="font-bold text-zinc-800 text-xs">{res.name}</p>
-                        <p className="text-[10px] text-zinc-500">{res.time}</p>
-                      </div>
-                      <span className="text-[9px] font-bold px-2 py-0.5 bg-red-50 text-red-700 border border-red-100 rounded-full">{res.tables}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="flex flex-col h-full relative">
+                 <Image src={CARD_IMAGES[4]} alt="POS System" fill className="object-cover rounded-2xl" />
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* POS Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[420px] w-full">
-            <motion.div
-              className="absolute top-0 left-0 w-[80%] aspect-[4/3] bg-white rounded-2xl shadow-lg overflow-hidden border border-zinc-100 z-10"
+      {/* Order Management Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="relative h-105 w-full">
+             <motion.div
+              className="absolute inset-0 bg-white rounded-3xl shadow-xl overflow-hidden border border-zinc-100 p-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="h-full w-full bg-zinc-50 flex flex-col p-5">
-                <h3 className="font-bold text-zinc-900 text-base mb-1">Family Platter Order</h3>
-                <p className="text-[10px] text-zinc-500 mb-4">Hall A — 18 Pax</p>
-                <div className="space-y-3">
-                  {[1, 2].map(i => (
-                    <div key={i} className="flex gap-3 p-2.5 bg-white border border-zinc-100 rounded-xl shadow-sm">
-                      <div className="w-12 h-12 bg-zinc-200 rounded-lg overflow-hidden relative">
-                        <Image src={i === 1 ? CARD_IMAGES[0] : CARD_IMAGES[1]} alt="Dish" fill className="object-cover" />
-                      </div>
-                      <div className="flex-1">
-                        <p className="font-bold text-[12px] text-zinc-800">{i === 1 ? 'Roast Chicken Platter' : 'Vegetarian Spread'}</p>
-                        <div className="flex items-center gap-2 mt-0.5">
-                          <span className="text-zinc-900 font-bold text-xs">${i === 1 ? '48' : '36'}.00</span>
-                          <span className="text-red-500 text-[9px] font-bold">×{i === 1 ? 3 : 2}</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="absolute bottom-0 right-0 w-[50%] bg-white rounded-2xl shadow-2xl border border-zinc-100 z-20 p-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <p className="text-[9px] font-bold text-zinc-500 uppercase mb-2">Bill Split (18 pax)</p>
-              <div className="space-y-1.5">
-                <div className="flex justify-between text-[10px]">
-                  <span className="text-zinc-600">Food Total</span>
-                  <span className="font-bold text-zinc-900">$240.00</span>
-                </div>
-                <div className="flex justify-between text-[10px]">
-                  <span className="text-zinc-600">Family Discount</span>
-                  <span className="font-bold text-red-600">-$24.00</span>
-                </div>
-                <div className="flex justify-between text-[10px] border-t border-zinc-100 pt-1.5">
-                  <span className="font-bold text-zinc-900">Per Person</span>
-                  <span className="font-bold text-zinc-900">$12.00</span>
-                </div>
-              </div>
+              <Image src={CARD_IMAGES[3]} alt="Order Management" fill className="object-cover rounded-2xl" />
             </motion.div>
           </div>
-
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-10 bg-red-500 relative">
+              <div className="h-0.5 w-10 bg-red-500 relative">
                 <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
               </div>
-              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">POS & Billing</span>
+              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">ORDER MANAGEMENT</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-              Flexible Billing <br /> for Every Family
+              Manage Large Orders Smoothly
             </h2>
             <p className="text-base text-zinc-600 leading-relaxed">
-              Family dining means flexible bills. Split by head, by family unit, or by dish — Menumium makes it fast and frictionless at checkout.
+              Ensure every dish is delivered correctly and on time.
             </p>
             <ul className="space-y-4">
               {[
-                "Instant per-person split calculation — no manual headaches.",
-                "Apply family bundle discounts and loyalty points automatically at checkout.",
-                "All payment types accepted: cash, card, QR pay, and e-wallets."
+                "Track table orders in real time",
+                "Modify orders instantly",
+                "Monitor kitchen preparation"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
-                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                  <div className="mt-1 shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
                     <Check className="w-3.5 h-3.5" />
                   </div>
                   <span className="text-zinc-600 text-sm leading-relaxed">{point}</span>
@@ -530,16 +364,186 @@ const FamilyStylePage = () => {
               ))}
             </ul>
             <div className="pt-4">
-              <Link href="/contact" className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg shadow-red-600/20 active:scale-95">
-                Get Started Now
+              <Link href="/contact" className="inline-flex items-center bg-black hover:bg-zinc-900 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all active:scale-95">
+                Get Started
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <Testimonials />
-      <FAQ />
+      {/* Table Management Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-zinc-900 rounded-[3rem] overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-red-600/10 to-transparent" />
+        <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-3">
+              <div className="h-0.5 w-10 bg-red-500 relative">
+                <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
+              </div>
+              <span className="text-red-400 font-bold tracking-wider uppercase text-xs">TABLE & RESERVATION</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Manage Large Tables Easily
+            </h2>
+            <p className="text-base text-zinc-400 leading-relaxed">
+              Organize seating and reservations efficiently.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-6 mt-4">
+              {[
+                { title: "Combine Tables", desc: "Combine tables for large groups" },
+                { title: "Availability", desc: "Track seating availability" },
+                { title: "Reservations", desc: "Manage reservations and walk-ins" }
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col gap-2">
+                  <div className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center text-red-500">
+                    <Check className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-white font-bold text-sm">{item.title}</h4>
+                  <p className="text-xs text-zinc-500 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <Link href="/contact" className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all w-fit mt-4 active:scale-95 shadow-xl shadow-red-600/20">
+              Get Started
+            </Link>
+          </div>
+          <div className="relative h-100">
+             <div className="relative h-full bg-zinc-800 p-2 rounded-4xl shadow-2xl border border-zinc-700 overflow-hidden">
+               <Image src={CARD_IMAGES[2]} alt="Table Management" fill className="object-cover rounded-3xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Menu Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="relative h-105 order-2 lg:order-1">
+            <div className="absolute inset-0 bg-red-200/20 blur-3xl rounded-full" />
+            <div className="relative h-full bg-white p-4 rounded-4xl shadow-2xl border border-zinc-100 overflow-hidden">
+               <Image src={CARD_IMAGES[1]} alt="Digital Menu" fill className="object-cover rounded-3xl" />
+            </div>
+          </div>
+          <div className="flex flex-col gap-6 order-1 lg:order-2">
+            <div className="flex items-center gap-3">
+              <div className="h-0.5 w-10 bg-red-500 relative">
+                <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
+              </div>
+              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">DIGITAL MENU</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
+              Easy Menu Access for Guests
+            </h2>
+            <p className="text-base text-zinc-600 leading-relaxed">
+              Allow customers to browse menu items instantly.
+            </p>
+            <ul className="space-y-4">
+              {[
+                "Guests view menu via QR code",
+                "Highlight family combos and specials",
+                "Update menu instantly"
+              ].map((point, i) => (
+                <li key={i} className="flex gap-3 items-start group">
+                  <div className="mt-1 shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <Check className="w-3.5 h-3.5" />
+                  </div>
+                  <span className="text-zinc-600 text-sm leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="pt-4">
+              <Link href="/contact" className="inline-flex items-center bg-black hover:bg-zinc-900 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all active:scale-95">
+                Get Started
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Multi-Branch Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-zinc-50/50 rounded-[3rem]">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col gap-6">
+            <div className="flex items-center gap-3">
+              <div className="h-0.5 w-10 bg-red-500 relative">
+                <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
+              </div>
+              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">MULTI BRANCH RESTAURANTS</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
+              Manage Multiple Locations Easily
+            </h2>
+            <p className="text-base text-zinc-600 leading-relaxed">
+              Expand your restaurant brand while keeping operations centralized.
+            </p>
+            <ul className="space-y-4">
+              {[
+                "Monitor sales across locations",
+                "Manage menus centrally",
+                "Track branch performance"
+              ].map((point, i) => (
+                <li key={i} className="flex gap-3 items-start group">
+                  <div className="mt-1 shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <Check className="w-3.5 h-3.5" />
+                  </div>
+                  <span className="text-zinc-600 text-sm leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="pt-4">
+              <Link href="/contact" className="inline-flex items-center bg-black hover:bg-zinc-900 text-white px-8 py-3.5 rounded-xl font-bold text-base transition-all active:scale-95">
+                Get Started
+              </Link>
+            </div>
+          </div>
+          <div className="relative h-105">
+             <div className="absolute inset-0 bg-red-200/20 blur-3xl rounded-full" />
+            <div className="relative h-full bg-white p-4 rounded-4xl shadow-2xl border border-zinc-100 overflow-hidden">
+               <Image src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800" alt="Multi-Branch Management" fill className="object-cover rounded-3xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <Testimonials
+        title="What Restaurant Owners Say About Dine360"
+        subtitle="Testimonials"
+        testimonials={[
+          {
+            quote: "Dine360 makes managing large family tables and group orders effortless. Our staff works faster and our guests enjoy smoother service.",
+            author: "Restaurant Owner",
+            role: "Owner",
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
+          }
+        ]}
+      />
+
+      {/* FAQ Section */}
+      <FAQ
+        title="Frequently Asked Questions"
+        subtitle="Answers To Common Questions"
+        description="Everything you need to know about Dine360 for family-style restaurants."
+        faqs={[
+          {
+            question: "Is Dine360 suitable for family restaurants?",
+            answer: "Yes. Dine360 supports large table management, group orders, and flexible billing."
+          },
+          {
+            question: "Can the system split bills between guests?",
+            answer: "Yes. Bills can be split easily for group dining."
+          },
+          {
+            question: "Can it manage reservations?",
+            answer: "Yes. Dine360 provides real-time reservation and table management."
+          },
+          {
+            question: "Is the system easy for staff to learn?",
+            answer: "Yes. The interface is designed to be simple and intuitive."
+          }
+        ]}
+      />
       <Footer />
     </div>
   )

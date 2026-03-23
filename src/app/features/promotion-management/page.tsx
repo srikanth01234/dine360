@@ -24,7 +24,9 @@ import {
   CalendarCheck,
   QrCode,
   Percent,
-  Tags
+  Tags,
+  ClipboardList,
+  Truck
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -37,13 +39,13 @@ const PromotionManagementPage = () => {
       <Navbar />
 
       <main>
-        {/* DESIGN FROM IMAGE SECTION */}
+        {/* SECTION 1: PURCHASE MANAGEMENT */}
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto text-center mb-20 px-4">
-            <h2 className="text-4xl font-bold text-zinc-950 mb-4 uppercase tracking-tight">Promotion Management</h2>
+            <h2 className="text-4xl font-bold text-zinc-950 mb-4 uppercase tracking-tight">PURCHASE MANAGEMENT</h2>
             <div className="w-20 h-1.5 bg-red-600 mx-auto mb-6"></div>
             <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
-              Drive customer loyalty and increase sales with targeted promotions, coupons, and seasonal campaigns that are easy to manage.
+              Simplify supplier management and purchasing with a structured system that keeps your restaurant stocked and organized.
             </p>
           </div>
 
@@ -52,38 +54,38 @@ const PromotionManagementPage = () => {
             {/* Feature 1 */}
             <div className="flex flex-col items-center p-10 rounded-2xl border border-zinc-800 bg-zinc-950 transition-all duration-300 hover:border-red-600/30 hover:shadow-xl hover:shadow-red-600/5 group">
               <div className="w-16 h-16 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6 text-red-600 transition-colors group-hover:bg-red-600 group-hover:text-white">
-                <Gift className="w-8 h-8" />
+                <Users className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Loyalty Loop</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Vendor Management</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Reward your fans. Create automated loyalty programs that keep customers coming back with points, tiers, and exclusive perks.
+                Maintain a centralized database of suppliers, pricing agreements, and contact details.
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="flex flex-col items-center p-10 rounded-2xl border border-zinc-800 bg-zinc-950 transition-all duration-300 hover:border-red-600/30 hover:shadow-xl hover:shadow-red-600/5 group">
               <div className="w-16 h-16 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6 text-red-600 transition-colors group-hover:bg-red-600 group-hover:text-white">
-                <Zap className="w-8 h-8" />
+                <ClipboardList className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Flash Sales</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Purchase Order Tracking</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Fill empty tables during slow hours. Launch instant SMS or email promotions to your database with time-sensitive offers.
+                Create and track purchase orders easily to ensure supplies arrive on time.
               </p>
             </div>
 
             {/* Feature 3 */}
             <div className="flex flex-col items-center p-10 rounded-2xl border border-zinc-800 bg-zinc-950 transition-all duration-300 hover:border-red-600/30 hover:shadow-xl hover:shadow-red-600/5 group">
               <div className="w-16 h-16 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6 text-red-600 transition-colors group-hover:bg-red-600 group-hover:text-white">
-                <Ticket className="w-8 h-8" />
+                <Layers className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Coupon Control</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Automatic Stock Updates</h3>
               <p className="text-zinc-400 leading-relaxed text-sm">
-                Issue unique, trackable discount codes. Analyze which campaigns drive the most ROI and optimize your marketing budget.
+                Inventory updates automatically when goods are received from suppliers.
               </p>
             </div>
           </div>
 
-          {/* Lower Split Section matching the image */}
+          {/* SECTION 2: SUPPLY MANAGEMENT */}
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-6 mb-24">
             {/* Left: Illustration Graphic */}
             <div className="relative order-2 lg:order-1">
@@ -91,15 +93,15 @@ const PromotionManagementPage = () => {
               <div className="relative bg-white p-8 md:p-12 rounded-full border border-zinc-100 shadow-2xl aspect-square flex items-center justify-center max-sm:mx-auto overflow-visible">
                 {/* Central Icon */}
                 <div className="w-40 h-40 bg-zinc-50 rounded-full flex items-center justify-center text-red-600 shadow-inner border border-zinc-100">
-                  <Gift className="w-20 h-20" />
+                  <Tag className="w-20 h-20" />
                 </div>
                 
                 {/* Floating Icons */}
                 <div className="absolute -top-4 right-10 w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center text-red-500 border border-zinc-50 hover:scale-110 transition-transform">
-                  <Tag className="w-7 h-7" />
+                  <Users className="w-7 h-7" />
                 </div>
                 <div className="absolute top-1/2 -right-4 -translate-y-1/2 w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center text-blue-500 border border-zinc-50 hover:scale-110 transition-transform">
-                  <Menu className="w-7 h-7" />
+                  <ClipboardList className="w-7 h-7" />
                 </div>
                 <div className="absolute -bottom-4 right-10 w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center text-orange-500 border border-zinc-50 hover:scale-110 transition-transform">
                   <Clock className="w-7 h-7" />
@@ -113,15 +115,15 @@ const PromotionManagementPage = () => {
             {/* Right: Text Content */}
             <div className="space-y-6 order-1 lg:order-2">
               <span className="inline-block px-5 py-1.5 bg-red-50 text-red-600 rounded-full text-xs font-bold uppercase tracking-wider border border-red-100">
-                Growth Tools
+                SUPPLY MANAGEMENT
               </span>
               
               <h2 className="text-4xl lg:text-5xl font-bold text-zinc-950 leading-tight">
-                Fuel Loyalty with Smarter <br/> Rewards & Coupons.
+                Keep Your Restaurant Stocked <br/> Without the Chaos.
               </h2>
               
               <p className="text-lg text-zinc-600 leading-relaxed">
-                Unlock higher revenue through automated promotions and dynamic loyalty programs. Whether it's a "Buy One Get One" deal or a seasonal flash sale, our tools give you the power to create, track, and optimize every campaign.
+                Dine360 Purchase Management helps restaurants streamline procurement by organizing supplier information and automating purchase order tracking. This ensures your kitchen always has the ingredients it needs to operate efficiently.
               </p>
               
               <div className="grid grid-cols-2 gap-4 pt-4">
@@ -129,25 +131,25 @@ const PromotionManagementPage = () => {
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Dynamic discounts</span>
+                  <span className="text-sm font-bold text-zinc-700">Vendor database management</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Loyalty points</span>
+                  <span className="text-sm font-bold text-zinc-700">Purchase order tracking</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Targeted coupons</span>
+                  <span className="text-sm font-bold text-zinc-700">Delivery recording</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 rounded-full bg-red-600/10 flex items-center justify-center text-red-600">
                     <CheckCircle className="w-3 h-3" />
                   </div>
-                  <span className="text-sm font-bold text-zinc-700">Analytics tracking</span>
+                  <span className="text-sm font-bold text-zinc-700">Inventory synchronization</span>
                 </div>
               </div>
 
@@ -159,32 +161,32 @@ const PromotionManagementPage = () => {
           </div>
         </section>
 
-        {/* STATS SECTION (Dark) */}
+        {/* SECTION 3: SUPPLIER CONTROL */}
         <section className="bg-zinc-900 text-white py-32 px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
-               <div className="absolute inset-0 bg-gradient-to-l from-orange-500/20 to-transparent rounded-3xl blur-2xl"></div>
+               <div className="absolute inset-0 bg-gradient-to-l from-red-600/20 to-transparent rounded-3xl blur-2xl"></div>
               <div className="relative bg-zinc-950 border border-zinc-800 rounded-3xl p-8 shadow-2xl">
                  <div className="flex justify-between items-end mb-6">
                    <div>
-                     <div className="text-zinc-500 text-sm mb-1">Campaign ROI</div>
-                     <div className="text-3xl font-bold text-white">1,240%</div>
+                     <div className="text-zinc-500 text-sm mb-1 uppercase tracking-wider">Purchase Flow</div>
+                     <div className="text-3xl font-bold text-white">SMART ORDERS</div>
                    </div>
                     <div className="h-12 w-24 flex items-end space-x-1">
                       <div className="w-1/4 h-1/2 bg-zinc-800 rounded-sm"></div>
                       <div className="w-1/4 h-2/3 bg-zinc-800 rounded-sm"></div>
                       <div className="w-1/4 h-3/4 bg-zinc-700 rounded-sm"></div>
-                      <div className="w-1/4 h-full bg-orange-500 rounded-sm"></div>
+                      <div className="w-1/4 h-full bg-red-600 rounded-sm"></div>
                     </div>
                  </div>
-                 <div className="space-y-3 pt-6 border-t border-zinc-800">
+                 <div className="space-y-4 pt-6 border-t border-zinc-800">
                     <div className="flex items-center justify-between text-sm">
-                      <span className="text-zinc-300">Summer Happy Hour</span>
-                      <span className="text-green-500 font-bold">+210% Visits</span>
+                      <span className="text-zinc-300">Supplier Records</span>
+                      <span className="text-red-500 font-bold">Centralized Vendor Database</span>
                     </div>
                      <div className="flex items-center justify-between text-sm">
-                      <span className="text-zinc-300">Birthday Rewards</span>
-                      <span className="text-green-500 font-bold">+85% Redemption</span>
+                      <span className="text-zinc-300">Stock Sync</span>
+                      <span className="text-red-500 font-bold">Instant Inventory Updates</span>
                     </div>
                  </div>
               </div>
@@ -192,60 +194,65 @@ const PromotionManagementPage = () => {
 
             <div className="order-1 md:order-2">
               <div className="inline-flex items-center space-x-2 bg-zinc-800 rounded-full px-4 py-2 mb-8 border border-zinc-700">
-                <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                <span className="text-sm font-medium text-zinc-300">Customer Retention</span>
+                <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+                <span className="text-sm font-medium text-zinc-300">Built for Reliable Supply Chains</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                Turn Guests into Superfans
+                SUPPLIER CONTROL
               </h2>
               <p className="text-zinc-400 text-lg leading-relaxed mb-10">
-                Acquiring a new customer is 5x more expensive than retaining one. Build lasting relationships with automated marketing that feels personal, not spammy.
+                Ensure your restaurant never runs out of critical ingredients with organized purchasing workflows. Automated requests and vendor management keep your operations smooth.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-zinc-800 pt-10">
                 <div>
-                  <div className="text-4xl font-bold text-white mb-2">+45%</div>
-                  <div className="text-zinc-500 text-sm">Repeat Rate</div>
+                  <div className="text-4xl font-bold text-white mb-2">100%</div>
+                  <div className="text-zinc-500 text-sm">Order Accuracy</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-white mb-2">10x</div>
-                  <div className="text-zinc-500 text-sm">ROI</div>
+                  <div className="text-4xl font-bold text-white mb-2">Live</div>
+                  <div className="text-zinc-500 text-sm">Stock Sync</div>
                 </div>
                  <div>
-                  <div className="text-4xl font-bold text-white mb-2">+25%</div>
-                  <div className="text-zinc-500 text-sm">Sales Boost</div>
+                  <div className="text-4xl font-bold text-white mb-2">24/7</div>
+                  <div className="text-zinc-500 text-sm">Vendor Tracking</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* DETAILED FEATURE (Light) */}
+        {/* SECTION 4: Everything You Need to Manage Purchases */}
         <section className="bg-zinc-50 py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center max-w-3xl mx-auto mb-20">
-              <h2 className="text-4xl font-bold text-zinc-900 mb-6">Automated Campaigns</h2>
+              <h2 className="text-4xl font-bold text-zinc-900 mb-6 uppercase tracking-tight">Everything You Need to Manage Purchases</h2>
               <p className="text-xl text-zinc-500">
-                Set it and forget it. Our system triggers the right offer at the right time based on customer behavior, ensuring you're always top of mind.
+                Our purchase management tools help restaurants maintain strong supplier relationships and control procurement costs.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
-                  icon: <Gift className="w-6 h-6" />,
-                  title: "Birthday Triggers",
-                  desc: "Automatically send a free dessert styling coupon 3 days before a guest's birthday. It's a small gesture with a huge impact."
+                  icon: <Users className="w-6 h-6" />,
+                  title: "Supplier Management",
+                  desc: "Maintain supplier contact details and pricing information in a unified dashboard."
                 },
                 {
-                  icon: <Ticket className="w-6 h-6" />,
-                  title: "Win-Back Emails",
-                  desc: "Haven't seen a regular in 30 days? Automatically entice them back with a 'We Miss You' discount."
+                  icon: <ClipboardList className="w-6 h-6" />,
+                  title: "Purchase Orders",
+                  desc: "Generate and track purchase orders easily with automated status updates."
                 },
                 {
-                  icon: <Tag className="w-6 h-6" />,
-                  title: "Smart Segmentation",
-                  desc: "Target high spenders for wine tastings and lunch regulars for sandwich specials. Relevance drives revenue."
+                  icon: <Truck className="w-6 h-6" />,
+                  title: "Delivery Tracking",
+                  desc: "Record incoming shipments and update inventory instantly upon arrival."
+                },
+                {
+                  icon: <TrendingUp className="w-6 h-6" />,
+                  title: "Procurement Reports",
+                  desc: "Analyze purchasing trends and supplier performance to optimize your costs."
                 }
               ].map((feature, i) => (
                 <div key={i} className="bg-zinc-950 p-8 rounded-2xl shadow-sm border border-zinc-800 hover:shadow-md transition-shadow">
@@ -253,7 +260,7 @@ const PromotionManagementPage = () => {
                     {feature.icon}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-                  <p className="text-zinc-400 leading-relaxed">
+                  <p className="text-zinc-400 leading-relaxed text-sm">
                     {feature.desc}
                   </p>
                 </div>
@@ -262,7 +269,7 @@ const PromotionManagementPage = () => {
           </div>
         </section>
 
-        {/* QUICK NAV */}
+        {/* SECTION 5: Works Seamlessly With Your Restaurant System */}
         <FeatureQuickNav />
 
         {/* CTA SECTION */}
@@ -272,11 +279,25 @@ const PromotionManagementPage = () => {
            </div>
            
            <div className="max-w-7xl mx-auto text-center relative z-10">
-             <h2 className="text-3xl md:text-5xl font-bold mb-8">Ready to Boost Your Sales?</h2>
-             <p className="text-zinc-400 text-lg mb-10 max-w-2xl mx-auto">
-               Join hundreds of restaurants that use Dine360 to manage their promotions with 
-               precision and style.
-             </p>
+             <h2 className="text-3xl md:text-5xl font-bold mb-8 uppercase tracking-tight">Works Seamlessly With Your Restaurant System</h2>
+             <div className="max-w-2xl mx-auto grid grid-cols-2 gap-6 text-left mb-12">
+               <div className="flex items-center gap-3">
+                 <CheckCircle className="w-5 h-5 text-red-600" />
+                 <span className="text-zinc-300">Inventory stock updates</span>
+               </div>
+               <div className="flex items-center gap-3">
+                 <CheckCircle className="w-5 h-5 text-red-600" />
+                 <span className="text-zinc-300">POS ingredient consumption</span>
+               </div>
+               <div className="flex items-center gap-3">
+                 <CheckCircle className="w-5 h-5 text-red-600" />
+                 <span className="text-zinc-300">Supplier database integration</span>
+               </div>
+               <div className="flex items-center gap-3">
+                 <CheckCircle className="w-5 h-5 text-red-600" />
+                 <span className="text-zinc-300">Financial and reporting tools</span>
+               </div>
+             </div>
              <button className="bg-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all shadow-xl shadow-red-600/20 active:scale-95">
                Start Free Trial
              </button>

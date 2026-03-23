@@ -36,14 +36,14 @@ const Navbar = () => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   const featureItems = [
-    { name: 'Kitchen Management', href: '/features/pos-management', icon: Monitor },
-    { name: 'Multi Menu Management', href: '/features/multi-menu-management', icon: BookOpen },
-    { name: 'Order Management', href: '/features/order-management', icon: ClipboardList },
-    { name: 'Restaurant Website', href: '/features/restaurant-website', icon: Globe },
-    { name: 'Table & Reservation', href: '/features/table-reservation', icon: Users },
-    { name: 'QR Code Menu', href: '/features/qr-code-menu', icon: QrCode },
-    { name: 'Promotion Management', href: '/features/promotion-management', icon: Tag },
-    { name: 'Inventory Management', href: '/features/inventory-management', icon: Layers },
+    { name: 'Kitchen Management', href: '/features/kitchen-management', icon: Monitor },
+    { name: 'Table Reservation', href: '/features/table-reservation', icon: Users },
+    { name: 'CRM', href: '/features/loyalty-management', icon: Users },
+    { name: 'Sales', href: '/features/order-management', icon: ClipboardList },
+    { name: 'Inventory', href: '/features/inventory-management', icon: Layers },
+    { name: 'Purchase', href: '/features/promotion-management', icon: Tag },
+    { name: 'Uber Integration', href: '/features/uber-integration', icon: Globe },
+    { name: 'Invoicing', href: '/features/invoicing', icon: FileText },
   ];
 
   const restaurantTypes = [

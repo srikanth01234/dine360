@@ -8,17 +8,17 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
-import { Check, Dot, Layout, TrendingUp, Smartphone, Zap, RefreshCw, Clock, Target, Box, Menu, AreaChart } from 'lucide-react'
+import { Check, Dot, Layout, TrendingUp, Smartphone, Zap, RefreshCw, Clock, Target, ShoppingCart, Package, QrCode, BookOpen, Tag } from 'lucide-react'
 
 const CARD_IMAGES = [
-  "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=600",
-  "https://images.unsplash.com/photo-1616733148217-1bb14305490e?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=600",
+  "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=80&w=600",
 ]
 
-const GhostKitchenPage = () => {
+const FineDinePage = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -33,7 +33,7 @@ const GhostKitchenPage = () => {
               {[1, 2, 3].map((i) => (
                 <div key={i} className="inline-block h-8 w-8 rounded-full ring-2 ring-white bg-zinc-200 overflow-hidden relative">
                   <Image
-                    src={`https://randomuser.me/api/portraits/thumb/men/${60 + i}.jpg`}
+                    src={`https://randomuser.me/api/portraits/thumb/men/${10 + i}.jpg`}
                     alt="User"
                     fill
                     className="object-cover"
@@ -47,16 +47,16 @@ const GhostKitchenPage = () => {
 
             <div className="inline-flex items-center gap-2 text-red-600 font-bold tracking-widest uppercase text-xs">
               <div className="h-[1px] w-6 bg-red-500" />
-              GHOST KITCHEN OPERATIONS
+              Take Control of Your
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-900 leading-[1.1]">
-              Take Control of Your <br />
-              <span className="italic font-serif font-light text-zinc-800">Ghost Kitchen Operations</span>
+              Fine Dining Experience <br />
+              <span className="italic font-serif font-light text-zinc-800">Precision Dining, Elevated</span>
             </h1>
 
             <p className="text-lg text-zinc-600 max-w-lg leading-relaxed">
-              Run delivery-only restaurants efficiently with a system designed for modern cloud kitchens. Dine360 helps you manage delivery orders, kitchen workflows, and multiple virtual brands from one powerful dashboard.
+              Deliver flawless service and elegant dining operations with a smart system built for high-end restaurants. A powerful cloud-based platform designed to manage reservations, kitchen coordination, guest preferences, and service flow — all from one place.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mt-1">
@@ -64,22 +64,24 @@ const GhostKitchenPage = () => {
                 href="/contact"
                 className="bg-red-600 hover:bg-red-700 text-white px-7 py-3.5 rounded-xl font-semibold text-base transition-all shadow-lg shadow-red-600/20 active:scale-95"
               >
-                Start Today
+                Reserve Your Demo
               </Link>
               <Link
                 href="/contact"
                 className="bg-black hover:bg-zinc-900 text-white px-7 py-3.5 rounded-xl font-semibold text-base transition-all active:scale-95"
               >
-                Book A Demo
+                Start Free Now
               </Link>
             </div>
 
             <div className="pt-6 border-t border-zinc-100 mt-4 flex flex-col gap-2">
-               <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">Trusted by Industry Leaders</span>
-              <div className="flex items-center gap-6 grayscale opacity-60">
-                <span className="text-sm font-bold text-zinc-400">UberEats</span>
-                <span className="text-sm font-bold text-zinc-400">DoorDash</span>
-                <span className="text-sm font-bold text-zinc-400">GrubHub</span>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-red-500" />
+                <span className="text-xs font-semibold text-zinc-500">Fine Dining POS with Multi-Branch Management</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-red-300" />
+                <span className="text-xs font-semibold text-zinc-500">Trusted by hospitality innovators</span>
               </div>
             </div>
           </div>
@@ -95,11 +97,16 @@ const GhostKitchenPage = () => {
                 animate={{ opacity: 1, x: 0, rotate: -12 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <Image src={CARD_IMAGES[0]} alt="Delivery Hub" fill className="object-cover" />
+                <Image src={CARD_IMAGES[0]} alt="Fine Dining" fill className="object-cover" />
                 <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
                   <div className="relative z-10">
-                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Efficiency</p>
-                    <p className="text-white font-bold text-2xl">3X Faster</p>
+                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Covers</p>
+                    <p className="text-white font-bold text-2xl">+85%</p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 w-full h-16 text-red-500/90">
+                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" className="w-full h-full">
+                      <path fill="currentColor" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
                   </div>
                 </div>
               </motion.div>
@@ -110,11 +117,16 @@ const GhostKitchenPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <Image src={CARD_IMAGES[1]} alt="Kitchen Operations" fill className="object-cover" />
+                <Image src={CARD_IMAGES[1]} alt="Gourmet" fill className="object-cover" />
                 <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
                   <div className="relative z-10">
-                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Operational</p>
-                    <p className="text-white font-bold text-2xl">+40%</p>
+                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Satisfaction</p>
+                    <p className="text-white font-bold text-2xl">5 Stars</p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 w-full h-16 text-orange-500/90">
+                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" className="w-full h-full">
+                      <path fill="currentColor" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
                   </div>
                 </div>
               </motion.div>
@@ -125,11 +137,16 @@ const GhostKitchenPage = () => {
                 animate={{ opacity: 1, x: 0, rotate: 12 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                <Image src={CARD_IMAGES[2]} alt="Cloud System" fill className="object-cover" />
+                <Image src={CARD_IMAGES[2]} alt="Plated Dish" fill className="object-cover" />
                 <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-zinc-900/90 via-zinc-900/40 to-transparent p-4 flex flex-col justify-end">
                   <div className="relative z-10">
-                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Reliable</p>
-                    <p className="text-white font-bold text-2xl">100% Cloud</p>
+                    <p className="text-[10px] text-zinc-300 font-medium tracking-wide uppercase mb-0.5">Accuracy</p>
+                    <p className="text-white font-bold text-2xl">100%</p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 w-full h-16 text-red-500/90">
+                    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" className="w-full h-full">
+                      <path fill="currentColor" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
                   </div>
                 </div>
               </motion.div>
@@ -148,7 +165,7 @@ const GhostKitchenPage = () => {
             className="flex items-center justify-center gap-2 mb-6"
           >
             <div className="h-[1px] w-8 bg-red-500" />
-            <span className="text-red-600 font-bold tracking-widest uppercase text-xs">DELIVERY-FIRST OPERATIONS</span>
+            <span className="text-red-600 font-bold tracking-widest uppercase text-xs">EFFORTLESS SERVICE, PREMIUM EXPERIENCES</span>
             <div className="h-[1px] w-8 bg-red-500" />
           </motion.div>
 
@@ -159,8 +176,8 @@ const GhostKitchenPage = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-bold text-zinc-900 mb-6 leading-tight"
           >
-            Transform Your Ghost Kitchen with <br className="hidden md:block" />
-            <span className="text-red-600">Dine360 Restaurant Platform</span>
+            Elevate Your Restaurant with <br className="hidden md:block" />
+            <span className="text-red-600">Dine360 Fine Dining Management Platform</span>
           </motion.h2>
 
           <motion.p
@@ -170,43 +187,132 @@ const GhostKitchenPage = () => {
             transition={{ delay: 0.2 }}
             className="text-base text-zinc-600 max-w-2xl mx-auto"
           >
-            Ghost kitchens require speed, coordination, and centralized control. Dine360 helps virtual restaurants manage delivery orders, kitchen operations, and multiple brands without operational chaos.
+            Designed for restaurants where service, precision, and guest satisfaction matter most. Dine360 helps fine dining establishments manage reservations, kitchen coordination, guest experiences, and operations with precision and efficiency.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {[
-            { label: "Faster Order Processing", value: "3X", desc: "Handle high delivery volumes without delays." },
-            { label: "Operational Efficiency", value: "40%", desc: "Manage multiple delivery brands from one kitchen." },
-            { label: "Cloud-Based System", value: "100%", desc: "Control your kitchen operations from anywhere." }
-          ].map((stat, i) => (
+        <div className="relative flex justify-center items-center min-h-[600px]">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl h-full -z-10">
             <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, rotate: -15, scale: 0.8 }}
+              whileInView={{ opacity: 1, rotate: -5, scale: 1 }}
+              viewport={{ once: true }}
+              className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-red-100/50 rounded-[4rem] -rotate-12"
+            />
+            <motion.div
+              initial={{ opacity: 0, rotate: 15, scale: 0.8 }}
+              whileInView={{ opacity: 1, rotate: 5, scale: 1 }}
+              viewport={{ once: true }}
+              className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-zinc-200/50 rounded-[4rem] rotate-12"
+            />
+          </div>
+
+          <div className="relative z-10 w-full max-w-4xl flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-zinc-100 text-center"
+              className="relative w-64 h-[500px] bg-zinc-900 rounded-[3rem] border-[8px] border-zinc-800 shadow-2xl overflow-hidden flex flex-col"
             >
-              <p className="text-red-600 font-bold text-4xl mb-2">{stat.value}</p>
-              <h4 className="text-zinc-900 font-bold text-lg mb-2">{stat.label}</h4>
-              <p className="text-zinc-500 text-sm">{stat.desc}</p>
+              <div className="h-6 w-full flex justify-between px-6 pt-2">
+                <div className="text-[10px] text-zinc-400">9:41</div>
+                <div className="flex gap-1.5 h-2 items-center">
+                  <div className="w-3 h-2 bg-zinc-600 rounded-full" />
+                  <div className="w-4 h-2 bg-zinc-600 rounded-full" />
+                </div>
+              </div>
+              <div className="p-4 flex-1 flex flex-col pt-8">
+                <div className="w-12 h-12 rounded-2xl bg-red-500 mb-4 mx-auto flex items-center justify-center text-white font-bold text-xl">M</div>
+                <div className="text-center mb-6">
+                  <h3 className="text-white font-bold text-lg">Fine Dine Hub</h3>
+                  <p className="text-zinc-500 text-[10px]">Multi-Branch Operations Active</p>
+                </div>
+                <div className="space-y-3">
+                  {[1, 2, 3, 4].map(i => (
+                    <div key={i} className="h-10 w-full bg-zinc-800/50 rounded-xl animate-pulse" />
+                  ))}
+                </div>
+              </div>
             </motion.div>
-          ))}
+
+            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="absolute -left-12 top-20 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 max-w-[220px]">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="p-2 bg-red-50 rounded-lg text-red-600"><TrendingUp className="w-5 h-5" /></div>
+                <span className="text-lg font-bold text-zinc-900">90%</span>
+              </div>
+              <p className="text-sm font-bold text-zinc-800 mb-1">Service Efficiency</p>
+              <p className="text-[11px] text-zinc-500 leading-relaxed">Optimize service flow and improve staff coordination during peak dining hours.</p>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }} className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 w-full max-w-[280px] z-20">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600"><Check className="w-6 h-6" /></div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xl font-bold text-zinc-900">100%</span>
+                    <span className="text-[10px] bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-bold">LIVE</span>
+                  </div>
+                  <p className="text-sm font-bold text-zinc-800">Secure Payments</p>
+                  <p className="text-[11px] text-zinc-500 mt-1">A reliable and secure billing system designed for premium dining environments.</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.5 }} className="absolute -right-12 top-48 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 max-w-[220px]">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="p-2 bg-orange-50 rounded-lg text-orange-600"><TrendingUp className="w-5 h-5" /></div>
+                <span className="text-lg">30%</span>
+              </div>
+              <p className="text-sm font-bold text-zinc-800 mb-1">Guest Satisfaction Increase</p>
+              <p className="text-[11px] text-zinc-500">Enhance customer experiences through faster service and personalized guest management.</p>
+            </motion.div>
+
+            <motion.div animate={{ y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: 4 }} className="absolute -left-24 top-1/2 w-16 h-16 bg-white rounded-full shadow-lg flex flex-col items-center justify-center border border-zinc-100">
+              <Layout className="w-6 h-6 text-red-500" />
+              <span className="text-[8px] font-bold text-zinc-400 mt-1">Dashboard</span>
+            </motion.div>
+
+            <motion.div animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 3.5, delay: 0.5 }} className="absolute -right-24 top-20 w-16 h-16 bg-white rounded-full shadow-lg flex flex-col items-center justify-center border border-zinc-100">
+              <Smartphone className="w-6 h-6 text-zinc-800" />
+              <span className="text-[8px] font-bold text-zinc-400 mt-1">App</span>
+            </motion.div>
+
+            <motion.div animate={{ y: [0, -15, 0] }} transition={{ repeat: Infinity, duration: 5, delay: 1 }} className="absolute -right-10 -bottom-10 w-20 h-20 bg-zinc-900 rounded-full shadow-2xl flex flex-col items-center justify-center border border-zinc-800">
+              <Dot className="w-10 h-10 text-red-500 animate-pulse" />
+              <span className="text-[8px] font-bold text-zinc-400 -mt-2">Live Cloud</span>
+            </motion.div>
+          </div>
         </div>
+      </section>
+
+      {/* All-in-One Banner */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-zinc-900 rounded-[2.5rem] p-10 md:p-14 text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="h-[1px] w-8 bg-red-500" />
+            <span className="text-red-400 font-bold tracking-widest uppercase text-xs">DINE360 PERFORMANCE</span>
+            <div className="h-[1px] w-8 bg-red-500" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+            The Fine Dining Experience Engine
+          </h2>
+          <p className="text-zinc-400 max-w-2xl mx-auto text-sm leading-relaxed">
+            Transform elegant dining operations with intelligent systems designed for precision service and seamless coordination.
+          </p>
+        </motion.div>
       </section>
 
       {/* Performance Journey Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto bg-white">
         <div className="text-center mb-16">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-zinc-400 font-bold uppercase tracking-[0.2em] text-[10px] mb-3">
-            GHOST KITCHEN PERFORMANCE
+            Dine360 Challenging
           </motion.div>
           <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
-            The Delivery Efficiency Journey
+            The Performance Journey
           </motion.h2>
           <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="text-zinc-500 max-w-2xl mx-auto text-sm">
-            Ghost kitchens operate at high speed with multiple delivery platforms. Dine360 connects all your orders into one system, helping you manage everything seamlessly.
+            From reservation to final course, Menumium orchestrates every element of fine dining with the precision your guests expect.
           </motion.p>
         </div>
 
@@ -215,13 +321,13 @@ const GhostKitchenPage = () => {
             <div className="hidden md:block absolute left-0 top-0 w-[55%] h-full border-t-[10px] border-l-[10px] border-b-[10px] border-zinc-800 rounded-l-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pl-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-l-[80px] md:rounded-r-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[0]} alt="Centralized Orders" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800" alt="Table Management" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
-              <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Box className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Centralized Delivery Orders</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Orders from delivery platforms are consolidated into a single dashboard.</p>
+              <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Zap className="w-5 h-5" /></div>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">3X Faster Table Turnover</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Smart table management helps restaurants serve more guests while maintaining premium dining standards.</p>
             </div>
           </div>
 
@@ -229,13 +335,13 @@ const GhostKitchenPage = () => {
             <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-[10px] border-b-[10px] border-zinc-800 rounded-r-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pr-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-r-[80px] md:rounded-l-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[1]} alt="Kitchen Workflow" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&q=80&w=800" alt="Course Tracking" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
-              <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Zap className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Smart Kitchen Workflow</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Automated order routing ensures the kitchen handles orders efficiently.</p>
+              <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><RefreshCw className="w-5 h-5" /></div>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Instant Kitchen Communication</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Orders flow instantly from service staff to the kitchen, ensuring every dish is prepared accurately and efficiently.</p>
             </div>
           </div>
 
@@ -243,27 +349,27 @@ const GhostKitchenPage = () => {
             <div className="hidden md:block absolute left-0 top-0 w-[55%] h-full border-l-[10px] border-b-[10px] border-zinc-800 rounded-l-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pl-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-l-[80px] md:rounded-r-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[3]} alt="Order Fulfillment" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=80&w=800" alt="Multi-Branch" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
               <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Clock className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Faster Order Fulfillment</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Minimize preparation delays with real-time kitchen tracking.</p>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Seamless Service Flow</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Prevent delays and miscommunication with intelligent order routing and real-time service monitoring.</p>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row-reverse items-center relative md:-mt-[10px]">
-             <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-[10px] border-b-[10px] border-zinc-800 rounded-r-[100px] z-0"></div>
+            <div className="hidden md:block absolute right-0 top-0 w-[55%] h-full border-r-[10px] border-b-[10px] border-zinc-800 rounded-r-[100px] z-0"></div>
             <div className="w-full md:w-1/2 p-6 md:pr-10 md:py-8 relative z-10">
               <div className="relative h-36 w-full rounded-3xl md:rounded-r-[80px] md:rounded-l-2xl overflow-hidden shadow-lg">
-                <Image src={CARD_IMAGES[4]} alt="Order Handling" fill className="object-cover" />
+                <Image src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800" alt="Guest Experience" fill className="object-cover" />
               </div>
             </div>
             <div className="w-full md:w-1/2 p-6 md:px-12 relative z-10">
               <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center text-red-500 mb-4"><Target className="w-5 h-5" /></div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Accurate Order Handling</h3>
-              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Reduce delivery mistakes with automated validation.</p>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Precision Order Accuracy</h3>
+              <p className="text-zinc-800 text-sm leading-relaxed font-medium">Every order is verified and synchronized across devices, eliminating mistakes and improving guest satisfaction.</p>
             </div>
           </div>
         </div>
@@ -278,20 +384,20 @@ const GhostKitchenPage = () => {
                 <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
               </div>
               <span className="text-red-500 font-bold tracking-wider uppercase text-xs flex items-center gap-2">
-                DELIVERY POS
+                POS
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-              Manage Every Delivery Order <br /> From One Dashboard
+              Elegant Service, <br /> Powerful Operations
             </h2>
             <p className="text-base text-zinc-600 leading-relaxed">
-              Handle delivery and pickup orders quickly with a POS system built for cloud kitchens.
+              Deliver high-end dining service with a fast, intuitive point-of-sale system built for professional restaurant environments.
             </p>
             <ul className="space-y-4">
               {[
-                "Manage orders from multiple delivery apps",
-                "Track order preparation in real time",
-                "Accept secure online payments"
+                "Process orders quickly with minimal staff effort",
+                "Track every order from table to kitchen",
+                "Support multiple payment methods seamlessly"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
@@ -316,7 +422,7 @@ const GhostKitchenPage = () => {
               viewport={{ once: true }}
             >
               <div className="flex flex-col h-full relative">
-                 <Image src={CARD_IMAGES[0]} alt="Delivery POS" fill className="object-cover rounded-2xl" />
+                 <Image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800" alt="POS System" fill className="object-cover rounded-2xl" />
               </div>
             </motion.div>
           </div>
@@ -333,7 +439,7 @@ const GhostKitchenPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Image src={CARD_IMAGES[2]} alt="Order Management" fill className="object-cover rounded-2xl" />
+              <Image src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&q=80&w=800" alt="Order Management" fill className="object-cover rounded-2xl" />
             </motion.div>
           </div>
           <div className="flex flex-col gap-6">
@@ -344,16 +450,16 @@ const GhostKitchenPage = () => {
               <span className="text-red-500 font-bold tracking-wider uppercase text-xs">ORDER MANAGEMENT</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-              Streamline Delivery Orders
+              Manage Fine Dining Orders <br /> With Precision
             </h2>
             <p className="text-base text-zinc-600 leading-relaxed">
-              Manage delivery orders smoothly from preparation to dispatch.
+              Track and manage every order across tables, courses, and kitchen stations to deliver perfect dining experiences.
             </p>
             <ul className="space-y-4">
               {[
-                "Track order status in real time",
-                "Monitor kitchen preparation time",
-                "Prevent order bottlenecks during peak hours"
+                "Monitor course progression from starter to dessert",
+                "Adjust orders instantly without disrupting kitchen flow",
+                "Track table service progress in real time"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
@@ -372,7 +478,7 @@ const GhostKitchenPage = () => {
         </div>
       </section>
 
-      {/* Delivery Operations Section */}
+      {/* Table & Reservation Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-zinc-900 rounded-[3rem] overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-red-600/10 to-transparent" />
         <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
@@ -381,19 +487,19 @@ const GhostKitchenPage = () => {
               <div className="h-[2px] w-10 bg-red-500 relative">
                 <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
               </div>
-              <span className="text-red-400 font-bold tracking-wider uppercase text-xs">DELIVERY OPERATIONS</span>
+              <span className="text-red-400 font-bold tracking-wider uppercase text-xs">TABLE & RESERVATION</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-              Manage Delivery Flow Efficiently
+              Perfect Your Seating Experience
             </h2>
             <p className="text-base text-zinc-400 leading-relaxed">
-              Keep delivery operations organized and efficient even during busy hours.
+              Manage reservations and seating layouts effortlessly with tools designed for premium restaurants.
             </p>
             <div className="grid sm:grid-cols-2 gap-6 mt-4">
               {[
-                { title: "App Tracking", desc: "Track incoming orders from multiple platforms" },
-                { title: "Prep Monitoring", desc: "Monitor order queues and preparation times" },
-                { title: "Smart Routing", desc: "Reduce delivery delays with smart order routing" }
+                { title: "Visual Layout", desc: "Visual table layout management" },
+                { title: "Real-time Tracking", desc: "Real-time reservation tracking" },
+                { title: "VIP Management", desc: "Manage VIP guests and special requests" }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col gap-2">
                   <div className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center text-red-500">
@@ -410,7 +516,7 @@ const GhostKitchenPage = () => {
           </div>
           <div className="relative h-[400px]">
              <div className="relative h-full bg-zinc-800 p-2 rounded-[2rem] shadow-2xl border border-zinc-700 overflow-hidden">
-               <Image src={CARD_IMAGES[1]} alt="Delivery Flow" fill className="object-cover rounded-[1.5rem]" />
+               <Image src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Reservation System" fill className="object-cover rounded-[1.5rem]" />
             </div>
           </div>
         </div>
@@ -422,7 +528,7 @@ const GhostKitchenPage = () => {
           <div className="relative h-[420px] order-2 lg:order-1">
             <div className="absolute inset-0 bg-red-200/20 blur-3xl rounded-full" />
             <div className="relative h-full bg-white p-4 rounded-[2rem] shadow-2xl border border-zinc-100 overflow-hidden">
-               <Image src={CARD_IMAGES[3]} alt="Virtual Brands" fill className="object-cover rounded-[1.5rem]" />
+               <Image src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800" alt="Digital Menu" fill className="object-cover rounded-[1.5rem]" />
             </div>
           </div>
           <div className="flex flex-col gap-6 order-1 lg:order-2">
@@ -433,16 +539,16 @@ const GhostKitchenPage = () => {
               <span className="text-red-500 font-bold tracking-wider uppercase text-xs">DIGITAL MENU</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-              Manage Multiple Virtual Brands
+              Elegant Digital Menus <br /> For Modern Dining
             </h2>
             <p className="text-base text-zinc-600 leading-relaxed">
-              Operate multiple restaurant brands from one kitchen using centralized menu management.
+              Provide guests with beautifully designed digital menus that showcase dishes, wines, and specials.
             </p>
             <ul className="space-y-4">
               {[
-                "Manage different brand menus easily",
-                "Update menu items instantly",
-                "Sync menus across delivery platforms"
+                "Guests can browse menus directly from their phones",
+                "Update menus instantly across locations",
+                "Highlight chef specials and seasonal dishes"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
@@ -461,7 +567,7 @@ const GhostKitchenPage = () => {
         </div>
       </section>
 
-      {/* Multi-Kitchen Section */}
+      {/* Multi-Branch Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-zinc-50/50 rounded-[3rem]">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="flex flex-col gap-6">
@@ -469,19 +575,19 @@ const GhostKitchenPage = () => {
               <div className="h-[2px] w-10 bg-red-500 relative">
                 <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
               </div>
-              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">MULTI LOCATION KITCHENS</span>
+              <span className="text-red-500 font-bold tracking-wider uppercase text-xs">MULTI-LOCATION RESTAURANTS</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-              Expand Your Virtual Restaurant Network
+              Manage Every Location <br /> With Confidence
             </h2>
             <p className="text-base text-zinc-600 leading-relaxed">
-              Scale your ghost kitchen business across multiple locations with centralized management.
+              Operate multiple fine dining restaurants with a centralized management system.
             </p>
             <ul className="space-y-4">
               {[
-                "Monitor kitchen performance in real time",
-                "Manage multiple locations easily",
-                "Track delivery performance and revenue"
+                "View performance reports across locations",
+                "Manage menus and pricing centrally",
+                "Monitor service quality across branches"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
@@ -498,9 +604,9 @@ const GhostKitchenPage = () => {
             </div>
           </div>
           <div className="relative h-[420px]">
-             <div className="absolute inset-0 bg-red-200/20 blur-3xl rounded-full" />
+            <div className="absolute inset-0 bg-red-200/20 blur-3xl rounded-full" />
             <div className="relative h-full bg-white p-4 rounded-[2rem] shadow-2xl border border-zinc-100 overflow-hidden">
-               <Image src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800" alt="Multi-Kitchen Management" fill className="object-cover rounded-[1.5rem]" />
+               <Image src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800" alt="Multi-Branch Management" fill className="object-cover rounded-[1.5rem]" />
             </div>
           </div>
         </div>
@@ -508,14 +614,14 @@ const GhostKitchenPage = () => {
 
       {/* Testimonials */}
       <Testimonials
-        title="What Ghost Kitchen Operators Say About Dine360"
+        title="What Fine Dining Restaurants Say About Dine360"
         subtitle="Testimonials"
         testimonials={[
           {
-            quote: "Dine360 helped us manage three delivery brands from a single kitchen. Orders are organized, preparation is faster, and delivery mistakes have reduced significantly.",
-            author: "Cloud Kitchen Operator",
-            role: "Founder",
-            image: "https://randomuser.me/api/portraits/men/44.jpg"
+            quote: "Dine360 completely transformed how we manage reservations and service flow. Our guests experience smoother dining and our staff works more efficiently.",
+            author: "Michel Laurent",
+            role: "Restaurant Director",
+            image: "https://randomuser.me/api/portraits/men/32.jpg"
           }
         ]}
       />
@@ -524,23 +630,23 @@ const GhostKitchenPage = () => {
       <FAQ
         title="Frequently Asked Questions"
         subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for ghost kitchens and virtual restaurants."
+        description="Everything you need to know about Dine360 for fine dining restaurants."
         faqs={[
           {
-            question: "Is Dine360 suitable for ghost kitchens?",
-            answer: "Yes. Dine360 is designed to handle delivery-first restaurant operations and multiple virtual brands."
+            question: "Is Dine360 suitable for fine dining restaurants?",
+            answer: "Yes. Dine360 is designed to support premium restaurant operations including reservations, table management, kitchen coordination, and guest experience management."
           },
           {
-            question: "Can it manage orders from delivery apps?",
-            answer: "Yes. Orders from delivery platforms can be managed from one centralized dashboard."
+            question: "Can Dine360 manage complex dining services?",
+            answer: "Absolutely. Dine360 supports multi-course dining, order sequencing, and kitchen coordination for high-end service environments."
           },
           {
-            question: "Can I run multiple brands from one kitchen?",
-            answer: "Yes. Dine360 supports multiple menus and brands within the same kitchen."
+            question: "Does Dine360 handle reservations and waitlists?",
+            answer: "Yes. Restaurants can manage reservations, waitlists, and table availability in real time."
           },
           {
-            question: "Does Dine360 support cloud-based operations?",
-            answer: "Yes. The system is cloud-based, allowing you to manage operations from anywhere."
+            question: "Is training provided for staff?",
+            answer: "Yes. Our onboarding team provides training to ensure your staff can quickly learn and operate the system efficiently."
           }
         ]}
       />
@@ -549,4 +655,4 @@ const GhostKitchenPage = () => {
   )
 }
 
-export default GhostKitchenPage
+export default FineDinePage
