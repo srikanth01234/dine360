@@ -506,43 +506,10 @@ const CafeBistroPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Café Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us manage our busy morning rush easily. Orders move faster and our staff can focus more on customers.",
-            author: "Café Owner",
-            role: "Owner",
-            image: "https://randomuser.me/api/portraits/women/30.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for cafés and coffee shops."
-        faqs={[
-          {
-            question: "Is Dine360 suitable for cafés?",
-            answer: "Yes. Dine360 is designed to support quick service, takeaway orders, and table management for cafés."
-          },
-          {
-            question: "Can the system handle takeaway orders?",
-            answer: "Yes. It supports takeaway, dine-in, and delivery orders."
-          },
-          {
-            question: "Does Dine360 work on tablets and POS devices?",
-            answer: "Yes. The platform works on POS systems, tablets, and desktops."
-          },
-          {
-            question: "Can I track daily sales and reports?",
-            answer: "Yes. Dine360 provides detailed real-time sales reports and analytics."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

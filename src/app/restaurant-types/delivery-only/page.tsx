@@ -131,12 +131,8 @@ const DeliveryOnlyPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Cloud Kitchen Founders Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Order accuracy reached 100% after deploying Dine360 for our virtual brands. Our kitchen efficiency is through the roof.", author: "Delivery-Only Founder", role: "CEO", image: "https://randomuser.me/api/portraits/men/33.jpg" }]} 
-      />
-      <FAQ title="Delivery-Only Software FAQs" faqs={[{ question: "Can we manage multiple brands?", answer: "Yes, our system handles multiple menus and virtual brands from one single terminal." }, { question: "Does it integrate with global delivery apps?", answer: "Absolutely, we offer direct integrations with all major riders and logistics partners." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

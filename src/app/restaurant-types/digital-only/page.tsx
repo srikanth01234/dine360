@@ -219,12 +219,8 @@ const DigitalOnlyPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Digital Restaurant Owners Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Dine360 helped us manage multiple online brands from one kitchen. Everything is organized, and order processing is much faster.", author: "Cloud Kitchen Owner", role: "Founder", image: "https://randomuser.me/api/portraits/women/62.jpg" }]} 
-      />
-      <FAQ title="Digital-Only Software FAQs" faqs={[{ question: "Is Dine360 suitable for digital-only restaurants?", answer: "Yes. Dine360 is designed for delivery-first and online-only restaurant operations." }, { question: "Can it manage multiple delivery platforms?", answer: "Yes. Orders from multiple platforms can be handled in one dashboard." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

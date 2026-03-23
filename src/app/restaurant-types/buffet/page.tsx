@@ -505,41 +505,10 @@ const BuffetPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Restaurant Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us manage our buffet service more efficiently. Guest check-ins are faster and billing is seamless.",
-            author: "Buffet Restaurant Owner",
-            role: "Buffet Service",
-            image: "https://randomuser.me/api/portraits/men/32.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Answers To Common Questions"
-        faqs={[
-          {
-            question: "Is Dine360 suitable for buffet restaurants?",
-            answer: "Yes. Dine360 helps manage high guest volumes, billing, and table flow efficiently."
-          },
-          {
-            question: "Can it handle group dining and large tables?",
-            answer: "Yes. The system supports group seating and large table management."
-          },
-          {
-            question: "Does Dine360 support digital menus?",
-            answer: "Yes. Guests can access menus easily using QR codes."
-          },
-          {
-            question: "Can I track buffet sales and reports?",
-            answer: "Yes. The dashboard provides detailed real-time sales analytics."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

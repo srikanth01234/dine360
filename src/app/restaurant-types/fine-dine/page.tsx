@@ -213,12 +213,8 @@ const FineDiningPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Elite Hoteliers Say" 
-        subtitle="Global Excellence" 
-        testimonials={[{ quote: "Dine360 has redefined how we manage guest expectations at our flagship restaurants. It's the gold standard.", author: "Executive Chef", role: "Michelin-Star Venue", image: "https://randomuser.me/api/portraits/men/32.jpg" }]} 
-      />
-      <FAQ title="Fine Dining Product FAQs" faqs={[{ question: "Is Dine360 built for multi-course dining?", answer: "Absolutely. Our POS handles complex course timing and specialized modifiers required for fine dining." }, { question: "Can we track guest preferences?", answer: "Yes. Our CRM allows you to store detailed guest history, allergies, and favorite tables." }]} faqs2={[{ question: "Does it support pre-payment/deposits?", answer: "Yes. We offer secure prepayment options for reservations and exclusive events." }, { question: "Is the interface customizable?", answer: "We provide high-end configuration options to match your brand's aesthetic standards." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

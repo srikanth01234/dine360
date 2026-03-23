@@ -505,41 +505,10 @@ const FastCasualPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Restaurant Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us speed up our order processing and reduce long queues. Our staff works more efficiently and customers are happier.",
-            author: "Restaurant Owner",
-            role: "Fast Casual",
-            image: "https://randomuser.me/api/portraits/men/32.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        faqs={[
-          {
-            question: "Is Dine360 suitable for fast casual restaurants?",
-            answer: "Yes. Dine360 is designed to support high-volume restaurants that require fast ordering and efficient kitchen coordination."
-          },
-          {
-            question: "Can Dine360 handle takeaway and dine-in orders?",
-            answer: "Yes. The system supports both dine-in and takeaway orders seamlessly."
-          },
-          {
-            question: "Does the POS work on tablets and POS devices?",
-            answer: "Yes. Dine360 works on POS terminals, tablets, and desktops."
-          },
-          {
-            question: "Is the system secure?",
-            answer: "Yes. Dine360 uses secure cloud infrastructure to protect restaurant data."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

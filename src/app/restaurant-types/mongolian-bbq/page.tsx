@@ -132,12 +132,8 @@ const MongolianBBQPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Pitmasters Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Wait times dropped significantly after deploying Dine360 stations. Our Mongolian grill is now running at peak efficiency.", author: "BBQ Owner", role: "Proprietor", image: "https://randomuser.me/api/portraits/men/11.jpg" }]} 
-      />
-      <FAQ title="Mongolian BBQ Software FAQs" faqs={[{ question: "Can we track bowl volume?", answer: "Yes, our system provides precise quantity tracking for high-volume service." }, { question: "Is it suitable for high heat environments?", answer: "Our hardware is chosen for durability in intense kitchen environments." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

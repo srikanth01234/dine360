@@ -613,43 +613,10 @@ const FineDinePage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Fine Dining Restaurants Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 completely transformed how we manage reservations and service flow. Our guests experience smoother dining and our staff works more efficiently.",
-            author: "Michel Laurent",
-            role: "Restaurant Director",
-            image: "https://randomuser.me/api/portraits/men/32.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for fine dining restaurants."
-        faqs={[
-          {
-            question: "Is Dine360 suitable for fine dining restaurants?",
-            answer: "Yes. Dine360 is designed to support premium restaurant operations including reservations, table management, kitchen coordination, and guest experience management."
-          },
-          {
-            question: "Can Dine360 manage complex dining services?",
-            answer: "Absolutely. Dine360 supports multi-course dining, order sequencing, and kitchen coordination for high-end service environments."
-          },
-          {
-            question: "Does Dine360 handle reservations and waitlists?",
-            answer: "Yes. Restaurants can manage reservations, waitlists, and table availability in real time."
-          },
-          {
-            question: "Is training provided for staff?",
-            answer: "Yes. Our onboarding team provides training to ensure your staff can quickly learn and operate the system efficiently."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

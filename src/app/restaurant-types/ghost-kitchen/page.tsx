@@ -507,43 +507,10 @@ const GhostKitchenPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Ghost Kitchen Operators Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us manage three delivery brands from a single kitchen. Orders are organized, preparation is faster, and delivery mistakes have reduced significantly.",
-            author: "Cloud Kitchen Operator",
-            role: "Founder",
-            image: "https://randomuser.me/api/portraits/men/44.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for ghost kitchens and virtual restaurants."
-        faqs={[
-          {
-            question: "Is Dine360 suitable for ghost kitchens?",
-            answer: "Yes. Dine360 is designed to handle delivery-first restaurant operations and multiple virtual brands."
-          },
-          {
-            question: "Can it manage orders from delivery apps?",
-            answer: "Yes. Orders from delivery platforms can be managed from one centralized dashboard."
-          },
-          {
-            question: "Can I run multiple brands from one kitchen?",
-            answer: "Yes. Dine360 supports multiple menus and brands within the same kitchen."
-          },
-          {
-            question: "Does Dine360 support cloud-based operations?",
-            answer: "Yes. The system is cloud-based, allowing you to manage operations from anywhere."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

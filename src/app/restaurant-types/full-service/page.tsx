@@ -215,12 +215,8 @@ const FullServicePage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Restaurant Owners Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Dine360 helped us manage our dining floor and service seamlessly. Our guests notice the difference in speed and organization.", author: "Full-Service Owner", role: "MD", image: "https://randomuser.me/api/portraits/men/45.jpg" }]} 
-      />
-      <FAQ title="Full-Service Restaurant Software FAQs" faqs={[{ question: "Is Dine360 suitable for full-service restaurants?", answer: "Yes. It is designed to handle reservation management, table seating, and complex orders." }, { question: "Can it handle reservations and table mapping?", answer: "Yes. Dine360 provides a complete floor layout and waitlist management system." }]} faqs2={[{ question: "Does it support inventory tracking?", answer: "Yes. You can manage ingredients and stock levels in real time." }, { question: "Can I monitor global performance?", answer: "Yes. Multi-location reporting is built-in." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

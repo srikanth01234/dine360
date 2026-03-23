@@ -132,12 +132,8 @@ const ConcessionPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Venue Managers Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Queue times dropped significantly during the half-time rush. Dine360's speed is a total game-changer for stadium stands.", author: "Event Hall Manager", role: "Director", image: "https://randomuser.me/api/portraits/women/12.jpg" }]} 
-      />
-      <FAQ title="Concession Software FAQs" faqs={[{ question: "Can we track stock across lanes?", answer: "Yes, our real-time inventory management syncs perfectly across all stations." }, { question: "Does it support card and mobile?", answer: "Absolutely, we support Apple Pay, Google Pay, and all major credit cards." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

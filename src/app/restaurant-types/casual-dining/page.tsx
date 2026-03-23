@@ -505,41 +505,10 @@ const CasualDiningPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Restaurant Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us streamline our dining operations. Orders move faster and our staff can focus more on guests.",
-            author: "Restaurant Owner",
-            role: "Casual Dining",
-            image: "https://randomuser.me/api/portraits/men/32.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        faqs={[
-          {
-            question: "Is Dine360 suitable for casual dining restaurants?",
-            answer: "Yes. Dine360 supports reservations, table management, kitchen communication, and billing for casual dining restaurants."
-          },
-          {
-            question: "Does it support table reservations?",
-            answer: "Yes. Restaurants can manage reservations, waitlists, and table availability."
-          },
-          {
-            question: "Can staff use it on tablets?",
-            answer: "Yes. Dine360 works on POS systems, tablets, and desktops."
-          },
-          {
-            question: "Is data secure?",
-            answer: "Yes. Dine360 uses secure cloud infrastructure to protect restaurant data."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

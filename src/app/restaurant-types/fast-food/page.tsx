@@ -506,43 +506,10 @@ const FastFoodPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Restaurant Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us reduce order processing time and manage peak-hour traffic efficiently.",
-            author: "Restaurant Owner",
-            role: "Owner",
-            image: "https://randomuser.me/api/portraits/men/84.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for fast food restaurants."
-        faqs={[
-          {
-            question: "Is Dine360 suitable for fast food restaurants?",
-            answer: "Yes. It is designed for high-volume restaurants that require fast order processing."
-          },
-          {
-            question: "Can it handle takeaway orders?",
-            answer: "Yes. Dine360 supports dine-in, takeaway, and delivery orders."
-          },
-          {
-            question: "Does it work with POS terminals?",
-            answer: "Yes. Dine360 works with POS systems, tablets, and desktops."
-          },
-          {
-            question: "Is data secure?",
-            answer: "Yes. The platform uses secure cloud infrastructure."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

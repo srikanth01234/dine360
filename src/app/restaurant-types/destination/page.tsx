@@ -132,12 +132,8 @@ const DestinationPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Venue Managers Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Dine360 has been a game-changer for our resort. The system's scalability and reliability are unmatched in the industry.", author: "Resort Ops Director", role: "Director", image: "https://randomuser.me/api/portraits/men/91.jpg" }]} 
-      />
-      <FAQ title="Destination Software FAQs" faqs={[{ question: "Can it handle multi-location sync?", answer: "Yes, our cloud infrastructure keeps all your locations in perfect harmony." }, { question: "Is it suitable for remote areas?", answer: "Absolutely, our offline mode ensures zero downtime regardless of connectivity." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

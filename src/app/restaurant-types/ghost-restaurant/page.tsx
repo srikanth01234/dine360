@@ -464,7 +464,7 @@ const GhostKitchenPage = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <div className="h-[2px] w-10 bg-red-500 relative">
+              <div className="h-0.5 w-10 bg-red-500 relative">
                 <div className="absolute -right-1 -top-1 w-2 h-2 bg-red-500 rounded-full" />
               </div>
               <span className="text-red-500 font-bold tracking-wider uppercase text-xs">MULTI LOCATION KITCHENS</span>
@@ -482,7 +482,7 @@ const GhostKitchenPage = () => {
                 "Track delivery performance and revenue"
               ].map((point, i) => (
                 <li key={i} className="flex gap-3 items-start group">
-                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                  <div className="mt-1 shrink-0 w-5 h-5 rounded-full bg-red-50 flex items-center justify-center text-red-600 group-hover:bg-red-600 group-hover:text-white transition-colors">
                     <Check className="w-3.5 h-3.5" />
                   </div>
                   <span className="text-zinc-600 text-sm leading-relaxed">{point}</span>
@@ -495,51 +495,20 @@ const GhostKitchenPage = () => {
               </Link>
             </div>
           </div>
-          <div className="relative h-[420px]">
+          <div className="relative h-105">
             <div className="absolute inset-0 bg-red-200/20 blur-3xl rounded-full" />
-            <div className="relative h-full bg-white p-4 rounded-[2rem] shadow-2xl border border-zinc-100 overflow-hidden">
-               <Image src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800" alt="Multi-Kithchen Management" fill className="object-cover rounded-[1.5rem]" />
+            <div className="relative h-full bg-white p-4 rounded-4xl shadow-2xl border border-zinc-100 overflow-hidden">
+               <Image src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&q=80&w=800" alt="Multi-Kithchen Management" fill className="object-cover rounded-3xl" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Ghost Kitchen Operators Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us manage three delivery brands from a single kitchen. Orders are organized, preparation is faster, and delivery mistakes have reduced significantly.",
-            author: "Cloud Kitchen Operator",
-            role: "Ghost Kitchen",
-            image: "https://randomuser.me/api/portraits/men/45.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        faqs={[
-          {
-            question: "Is Dine360 suitable for ghost kitchens?",
-            answer: "Yes. Dine360 is designed to handle delivery-first restaurant operations and multiple virtual brands."
-          },
-          {
-            question: "Can it manage orders from delivery apps?",
-            answer: "Yes. Orders from delivery platforms can be managed from one centralized dashboard."
-          },
-          {
-            question: "Can I run multiple brands from one kitchen?",
-            answer: "Yes. Dine360 supports multiple menus and brands within the same kitchen."
-          },
-          {
-            question: "Does Dine360 support cloud-based operations?",
-            answer: "Yes. The system is cloud-based, allowing you to manage operations from anywhere."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

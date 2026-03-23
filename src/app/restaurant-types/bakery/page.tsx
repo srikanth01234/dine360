@@ -213,12 +213,8 @@ const BakeryPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Bakery Owners Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Dine360 helped us manage custom cake orders and daily sales easily. Everything is organized, and our workflow is much smoother.", author: "Bakery Owner", role: "Owner", image: "https://randomuser.me/api/portraits/women/44.jpg" }]} 
-      />
-      <FAQ title="Bakery Software FAQs" faqs={[{ question: "Is Dine360 suitable for bakeries?", answer: "Yes. Dine360 is designed to support bakery operations including custom orders and counter sales." }, { question: "Can it manage custom cake orders?", answer: "Yes. You can track and manage advance and custom orders easily." }, { question: "Does it support inventory tracking?", answer: "Yes. Dine360 helps track ingredients and stock in real time." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

@@ -506,43 +506,10 @@ const FoodTruckPage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Food Truck Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 helped us speed up order processing and manage busy festival crowds easily. Our food truck operations are much more organized now.",
-            author: "Food Truck Owner",
-            role: "Owner",
-            image: "https://randomuser.me/api/portraits/men/40.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for food trucks and street food vendors."
-        faqs={[
-          {
-            question: "Is Dine360 suitable for food trucks?",
-            answer: "Yes. Dine360 is designed to support mobile food businesses and fast service environments."
-          },
-          {
-            question: "Can the POS work on tablets?",
-            answer: "Yes. The system works on tablets, POS devices, and desktops."
-          },
-          {
-            question: "Does Dine360 support takeaway orders?",
-            answer: "Yes. It supports takeaway and quick-service ordering."
-          },
-          {
-            question: "Can I track daily sales easily?",
-            answer: "Yes. The dashboard provides real-time sales insights and reports."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

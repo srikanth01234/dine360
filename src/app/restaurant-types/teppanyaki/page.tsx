@@ -132,12 +132,8 @@ const TeppanyakiPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Grill Masters Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Wait times dropped significantly after deploying Dine360 at our grill stations. We handle large groups with zero billing errors now.", author: "Teppanyaki Owner", role: "Proprietor", image: "https://randomuser.me/api/portraits/men/22.jpg" }]} 
-      />
-      <FAQ title="Teppanyaki Software FAQs" faqs={[{ question: "Can we manage specific grill stations?", answer: "Yes, our system allows you to assign orders to specific tables and grills easily." }, { question: "Does it support seat bundling?", answer: "Absolutely, bundle groups or charge per seat with our flexible POS." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )

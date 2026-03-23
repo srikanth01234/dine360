@@ -507,43 +507,10 @@ const FamilyStylePage = () => {
       </section>
 
       {/* Testimonials */}
-      <Testimonials
-        title="What Restaurant Owners Say About Dine360"
-        subtitle="Testimonials"
-        testimonials={[
-          {
-            quote: "Dine360 makes managing large family tables and group orders effortless. Our staff works faster and our guests enjoy smoother service.",
-            author: "Restaurant Owner",
-            role: "Owner",
-            image: "https://randomuser.me/api/portraits/men/32.jpg"
-          }
-        ]}
-      />
+      <Testimonials />
 
       {/* FAQ Section */}
-      <FAQ
-        title="Frequently Asked Questions"
-        subtitle="Answers To Common Questions"
-        description="Everything you need to know about Dine360 for family-style restaurants."
-        faqs={[
-          {
-            question: "Is Dine360 suitable for family restaurants?",
-            answer: "Yes. Dine360 supports large table management, group orders, and flexible billing."
-          },
-          {
-            question: "Can the system split bills between guests?",
-            answer: "Yes. Bills can be split easily for group dining."
-          },
-          {
-            question: "Can it manage reservations?",
-            answer: "Yes. Dine360 provides real-time reservation and table management."
-          },
-          {
-            question: "Is the system easy for staff to learn?",
-            answer: "Yes. The interface is designed to be simple and intuitive."
-          }
-        ]}
-      />
+      <FAQ />
       <Footer />
     </div>
   )

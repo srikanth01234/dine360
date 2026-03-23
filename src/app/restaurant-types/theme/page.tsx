@@ -132,12 +132,8 @@ const ThemeRestaurantPage = () => {
         </div>
       </section>
 
-      <Testimonials 
-        title="What Experience Designers Say" 
-        subtitle="Success Stories" 
-        testimonials={[{ quote: "Wait times dropped significantly after deploying Dine360 for our theme locations. Our guests love the fast checkout.", author: "Theme Restaurant Designer", role: "Manager", image: "https://randomuser.me/api/portraits/women/40.jpg" }]} 
-      />
-      <FAQ title="Theme Restaurant Software FAQs" faqs={[{ question: "Can we track themed merchandise?", answer: "Yes, our POS handles food and retail items seamlessly in one system." }, { question: "Does it support group bookings?", answer: "Absolutely, managing large themed parties is simple with our reservation tools." }]} />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   )
