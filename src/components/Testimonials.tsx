@@ -47,7 +47,12 @@ const testimonials = [
   }
 ];
 
-const Testimonials = () => {
+interface TestimonialsProps {
+  title?: string;
+  subtitle?: string;
+}
+
+const Testimonials = ({ title, subtitle }: TestimonialsProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Auto-slide functionality
@@ -124,7 +129,7 @@ const Testimonials = () => {
                     viewport={{ once: true }}
                     className="text-brand-red text-4xl font-serif italic" 
                   >
-                    Testimonials
+                    {title || "Testimonials"}
                   </motion.h3>
                   <motion.h2 
                     initial={{ opacity: 0, y: 10 }}
@@ -133,8 +138,7 @@ const Testimonials = () => {
                     transition={{ delay: 0.1 }}
                     className="text-4xl md:text-5xl font-serif font-black text-black mt-2"
                   >
-                    What Clients Say <br />
-                    About <span className="text-brand-red">Dine360</span>
+                    {subtitle || "What Clients Say About Dine360"}
                   </motion.h2>
                </div>
 

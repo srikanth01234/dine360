@@ -75,14 +75,24 @@ const FAQItem = ({ question, answer, isOpen, onClick }: { question: string, answ
   );
 };
 
-const FAQ = () => {
+interface FAQProps {
+  questions?: { question: string; answer: string }[];
+  title?: string;
+  subtitle?: string;
+  description?: string;
+}
+
+const FAQ = ({ questions, title, subtitle, description }: FAQProps) => {
+  // Use provided questions or fallback to static ones
+  const displayFaqs = questions || faqs;
+  
   // Default to the first available category so content actually renders
   const [activeCategory, setActiveCategory] = useState(faqCategories[0]);
   const [openIndex, setOpenIndex] = useState<number | null>(0); // First item open by default
 
-  const filteredFaqs = activeCategory
-    ? faqs.filter(faq => faq.category === activeCategory)
-    : faqs;
+  const filteredFaqs = questions 
+    ? questions 
+    : (activeCategory ? faqs.filter(faq => faq.category === activeCategory) : faqs);
 
   return (
     <section className="relative w-full bg-brand-cream flex flex-col items-center pb-20 lg:pb-32 pt-10">
@@ -102,25 +112,25 @@ const FAQ = () => {
             viewport={{ once: true }}
             className="text-red-600 text-4xl font-serif italic mb-4 block"
           >
-            AnswersToCommonQuestions
+            {title || "AnswersToCommonQuestions"}
           </motion.h3>
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-serif font-black text-black mt-2 mb-6"
+            className="text-4xl md:text-6xl font-serif font-black text-black mt-2 mb-6 uppercase"
           >
-            Frequently <br/> Asked <span className="text-red-600">Questions</span>
+            {subtitle || "Frequently Asked Questions"}
           </motion.h2>
           <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto">
-            Everything you need to know about Odoo restaurant management system to get started. 
+            {description || "Everything you need to know about Odoo restaurant management system to get started."}
           </p>
         </motion.div>
       </div>
 
-      {/* Tabs - Hidden for single category */}
-      {faqCategories.length > 1 && (
+      {/* Tabs - Hidden for single category or custom questions */}
+      {!questions && faqCategories.length > 1 && (
         <div className="relative z-10 flex flex-wrap justify-center gap-2 md:gap-4 px-4 mb-12">
           {faqCategories.map((category) => (
             <button
