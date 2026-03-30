@@ -43,14 +43,16 @@ const Footer = () => {
   ];
 
   const featureLinks = [
-    { name: "POS Management", href: "/features/pos-management" },
+    { name: "POS Management", href: "/features/pos" },
     { name: "Inventory Management", href: "/features/inventory-management" },
     { name: "Order Management", href: "/features/order-management" },
     { name: "Table Reservation", href: "/features/table-reservation" },
     { name: "QR Code Menu", href: "/features/qr-code-menu" },
-    { name: "Multi Menu", href: "/features/multi-menu-management" },
-    { name: "Promotion", href: "/features/promotion-management" },
+    { name: "Multi-Branch", href: "/features/multi-menu-management" },
+    { name: "Promotions", href: "/features/promotions" },
     { name: "Website Builder", href: "/features/restaurant-website" },
+    { name: "Business Dashboard", href: "/features/business-dashboard" },
+    { name: "Team Communication", href: "/features/team-communication" },
   ];
 
   const restaurantTypeLinks = [
@@ -80,7 +82,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <h5 className="font-bold uppercase text-sm mb-1 text-black/80">Address</h5>
-                    <p className="font-semibold text-black">Dine360 Headquarters, Chennai, India</p>
+                    <p className="font-semibold text-black text-sm leading-tight">Dine360 Headquarters, Toronto,<br/>Ontario, Canada</p>
                 </div>
             </div>
 
@@ -90,7 +92,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <h5 className="font-bold uppercase text-sm mb-1 text-black/80">Email Us</h5>
-                    <p className="font-semibold text-black text-xs leading-tight">
+                    <p className="font-semibold text-black text-sm leading-tight">
                         sales@dine360ads.com<br/>
                         support@dine360ads.com
                     </p>
@@ -103,9 +105,8 @@ const Footer = () => {
                 </div>
                 <div>
                     <h5 className="font-bold uppercase text-sm mb-1 text-black/80">Sales & Support</h5>
-                    <p className="font-semibold text-black text-xs leading-tight">
-                        Sales: +91 93608 24706<br/>
-                        Support: +91 95431 32906
+                    <p className="font-semibold text-black text-sm leading-tight">
+                        +1 647 360-2507
                     </p>
                 </div>
             </div>
@@ -206,8 +207,8 @@ const Footer = () => {
              © All Copyright 2024 by Dine 360
           </p>
           <div className="flex gap-4">
-            <Link href="/terms" className="text-white/80 hover:text-white transition-colors text-sm px-4 py-2 border border-white/20 rounded hover:bg-white/10">Terms & Condition</Link>
-            <Link href="/privacy" className="text-white/80 hover:text-white transition-colors text-sm px-4 py-2 border border-white/20 rounded hover:bg-white/10">Privacy Policy</Link>
+            <Link href="/terms" className="text-white hover:bg-black bg-black/20 transition-all text-sm px-6 py-2.5 font-bold rounded-lg shadow-sm border border-black/10">Terms & Condition</Link>
+            <Link href="/privacy" className="text-white hover:bg-black bg-black/20 transition-all text-sm px-6 py-2.5 mr-15 font-bold rounded-lg shadow-sm border border-black/10">Privacy Policy</Link>
           </div>
         </div>
       </div>

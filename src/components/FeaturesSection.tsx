@@ -81,6 +81,45 @@ const features = [
     ],
     image: "https://images.unsplash.com/photo-1546241072-48010ad2862c?q=80&w=1974",
     link: "/features/multi-menu-management" 
+  },
+  {
+    category: "Promotions",
+    title: "Marketing & Promotions",
+    description: "Boost your sales with targeted marketing campaigns and automated promotional tools designed for restaurants.",
+    points: [
+      "Create custom discount codes",
+      "Schedule happy hour deals",
+      "Automated SMS/Email marketing",
+      "Track campaign performance"
+    ],
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    link: "/features/promotions"
+  },
+  {
+    category: "Website & Ordering",
+    title: "Website & Online Ordering",
+    description: "Take direct orders from your own branded website and reduce dependency on expensive third-party apps.",
+    points: [
+      "Custom branded restaurant website",
+      "Direct commission-free ordering",
+      "Real-time menu sync",
+      "Mobile-optimized experience"
+    ],
+    image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072",
+    link: "/features/restaurant-website"
+  },
+  {
+    category: "Business Dashboard",
+    title: "Advanced Business Dashboard",
+    description: "Make data-driven decisions with a comprehensive dashboard that gives you a 360-degree view of your business.",
+    points: [
+      "Real-time revenue tracking",
+      "Sales trends & analytics",
+      "Staff performance metrics",
+      "Exportable financial reports"
+    ],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2026",
+    link: "/features/business-dashboard"
   }
 ];
 

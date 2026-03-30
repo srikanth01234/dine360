@@ -151,8 +151,7 @@ const ContactPage = () => {
                   <h4 className="font-bold text-zinc-900 mb-1 uppercase tracking-wider text-xs">Phone Number</h4>
                   <p className="text-zinc-500 font-medium text-sm mb-1">Speak directly with our customer success team for immediate assistance.</p>
                   <div className="space-y-0.5">
-                    <p className="text-zinc-500 font-medium text-sm"><span className="text-zinc-900 font-bold">Sales: </span>+91 90000 00000</p>
-                    <p className="text-zinc-500 font-medium text-sm"><span className="text-zinc-900 font-bold">Support: </span>+91 90000 00001</p>
+                    <p className="text-zinc-500 font-medium text-sm">+1 647 360-2507</p>
                   </div>
                 </div>
               </div>
@@ -164,10 +163,9 @@ const ContactPage = () => {
                 <div>
                   <h4 className="font-bold text-zinc-900 mb-1 uppercase tracking-wider text-xs">Headquarters</h4>
                   <div className="text-zinc-500 font-medium text-sm space-y-0.5">
-                    <p>Dine360 Technologies Pvt Ltd</p>
-                    <p>Innovation Hub</p>
-                    <p>Chennai, Tamil Nadu</p>
-                    <p>India</p>
+                    <p>Dine360 Headquarters</p>
+                    <p>Toronto, Ontario</p>
+                    <p>Canada</p>
                   </div>
                 </div>
               </div>

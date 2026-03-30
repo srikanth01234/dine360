@@ -28,7 +28,13 @@ import {
   Menu,
   X,
   Plus,
-  Minus
+  Minus,
+  LayoutDashboard,
+  Megaphone,
+  Layout,
+  MessageSquare,
+  Network,
+  CreditCard
 } from 'lucide-react';
 
 const Navbar = () => {
@@ -44,6 +50,12 @@ const Navbar = () => {
     { name: 'Purchase', href: '/features/promotion-management', icon: Tag },
     { name: 'Uber Integration', href: '/features/uber-integration', icon: Globe },
     { name: 'Invoicing', href: '/features/invoicing', icon: FileText },
+    { name: 'POS', href: '/features/pos', icon: CreditCard },
+    { name: 'Promotions', href: '/features/promotions', icon: Megaphone },
+    { name: 'Website & Online Ordering', href: '/features/restaurant-website', icon: Layout },
+    { name: 'Business Dashboard', href: '/features/business-dashboard', icon: LayoutDashboard },
+    { name: 'Multi-Branch Management', href: '/features/multi-menu-management', icon: Network },
+    { name: 'Team Communication', href: '/features/team-communication', icon: MessageSquare },
   ];
 
   const restaurantTypes = [
@@ -123,30 +135,83 @@ const Navbar = () => {
             <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
           </Link>
           
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block w-[600px]">
-            <div className="bg-white rounded-2xl shadow-2xl border border-zinc-100 overflow-hidden p-4 grid grid-cols-2 gap-2">
-              {featureItems.map((item) => (
-                <Link 
-                  key={item.name} 
-                  href={item.href}
-                  className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-colors group/item border border-transparent hover:border-zinc-100"
-                >
-                  <div className="flex items-center gap-4">
-                    <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all">
-                      <item.icon className="w-5 h-5" />
-                    </span>
-                    <span className="font-semibold text-zinc-800 text-sm">{item.name}</span>
-                  </div>
-                  <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
-                </Link>
-              ))}
-              <div className="col-span-2 mt-2 pt-2 border-t border-zinc-100 flex justify-center">
+          <div className="absolute top-full left-1/2 -translate-x-[42%] pt-2 hidden group-hover:block w-[1200px]">
+            <div className="bg-white rounded-2xl shadow-2xl border border-zinc-100 overflow-hidden px-8 py-6 grid grid-cols-4 gap-x-6 gap-y-1">
+              <div className="space-y-1">
+                {featureItems.slice(0, 4).map((item) => (
+                  <Link 
+                    key={item.name} 
+                    href={item.href}
+                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-5 h-5" />
+                      </span>
+                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                  </Link>
+                ))}
+              </div>
+              <div className="space-y-1">
+                {featureItems.slice(4, 8).map((item) => (
+                  <Link 
+                    key={item.name} 
+                    href={item.href}
+                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-5 h-5" />
+                      </span>
+                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                  </Link>
+                ))}
+              </div>
+              <div className="space-y-1">
+                {featureItems.slice(8, 12).map((item) => (
+                  <Link 
+                    key={item.name} 
+                    href={item.href}
+                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-5 h-5" />
+                      </span>
+                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                  </Link>
+                ))}
+              </div>
+              <div className="space-y-1">
+                {featureItems.slice(12, 14).map((item) => (
+                  <Link 
+                    key={item.name} 
+                    href={item.href}
+                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                  >
+                    <div className="flex items-center gap-4">
+                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-5 h-5" />
+                      </span>
+                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                  </Link>
+                ))}
+              </div>
+              <div className="col-span-4 mt-4 pt-4 border-t border-zinc-100 flex justify-center">
                 <Link 
                   href="/features"
-                  className="flex items-center gap-2 px-6 py-2 rounded-xl bg-red-50 hover:bg-red-100 text-red-700 transition-colors group/view-all font-semibold text-sm"
+                  className="flex items-center gap-2 px-8 py-3 rounded-xl bg-red-50 hover:bg-red-100 text-red-700 transition-colors group/view-all font-semibold text-sm"
                 >
                   View All Features
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover/view-all:translate-x-1" />
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover/view-all:translate-x-1" />
                 </Link>
               </div>
             </div>
