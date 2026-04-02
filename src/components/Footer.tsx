@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { 
-  MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Youtube, 
+  MapPin, Mail, Phone, Facebook, Instagram, Linkedin, Youtube, 
   ChevronsRight, ArrowRight, ArrowUp 
 } from 'lucide-react';
 import Image from 'next/image';
@@ -36,34 +36,54 @@ const Footer = () => {
 
   const links = [
     { name: "About Us", href: "/about" }, 
-    { name: "Pricing", href: "/pricing" }, 
+    { name: "Pricing", href: "/temppricing" }, 
     { name: "Our Blogs", href: "/blog" }, 
     { name: "FAQ'S", href: "/faq" }, 
     { name: "Contact Us", href: "/contact" }
   ];
 
   const featureLinks = [
-    { name: "POS Management", href: "/features/pos" },
-    { name: "Inventory Management", href: "/features/inventory-management" },
-    { name: "Order Management", href: "/features/order-management" },
+    { name: "Kitchen Management", href: "/features/kitchen-management" },
     { name: "Table Reservation", href: "/features/table-reservation" },
-    { name: "QR Code Menu", href: "/features/qr-code-menu" },
-    { name: "Multi-Branch", href: "/features/multi-menu-management" },
+    { name: "CRM", href: "/features/loyalty-management" },
+    { name: "Sales", href: "/features/order-management" },
+    { name: "Inventory Management", href: "/features/inventory-management" },
+    { name: "Purchase & Promotions", href: "/features/promotion-management" },
+    { name: "Uber Integration", href: "/features/uber-integration" },
+    { name: "Invoicing", href: "/features/invoicing" },
+    { name: "POS Management", href: "/features/pos" },
     { name: "Promotions", href: "/features/promotions" },
-    { name: "Website Builder", href: "/features/restaurant-website" },
+    { name: "Website & Online Ordering", href: "/features/restaurant-website" },
     { name: "Business Dashboard", href: "/features/business-dashboard" },
+    { name: "Multi-Branch Management", href: "/features/multi-menu-management" },
     { name: "Team Communication", href: "/features/team-communication" },
   ];
 
   const restaurantTypeLinks = [
+    { name: "Fine Dining", href: "/restaurant-types/fine-dining" },
+    { name: "Casual Dining", href: "/restaurant-types/casual-dining" },
+    { name: "Fast Casual Restaurant", href: "/restaurant-types/fast-casual" },
+    { name: "Ghost Restaurant", href: "/restaurant-types/ghost-kitchen" },
+    { name: "Family Style Restaurant", href: "/restaurant-types/family-style" },
+    { name: "Fast Food Restaurant", href: "/restaurant-types/fast-food" },
+    { name: "Food Truck, Cart, or Stand", href: "/restaurant-types/food-truck" },
+    { name: "Cafe", href: "/restaurant-types/cafe-bistro" },
+    { name: "Buffet Restaurant", href: "/restaurant-types/buffet" },
+    { name: "Pub", href: "/restaurant-types/pub" },
+    { name: "Cafeteria", href: "/restaurant-types/cafeteria" },
+    { name: "Coffee House", href: "/restaurant-types/coffee-house" },
+    { name: "Diner", href: "/restaurant-types/diner" },
+    { name: "Pop-Up Restaurant", href: "/restaurant-types/pop-up" },
+    { name: "Contemporary Casual Restaurant", href: "/restaurant-types/contemporary-casual" },
+    { name: "Bistro", href: "/restaurant-types/bistro" },
+    { name: "Destination Restaurant", href: "/restaurant-types/destination" },
+    { name: "Teppanyaki Grill", href: "/restaurant-types/teppanyaki" },
+    { name: "Mongolian Barbecue", href: "/restaurant-types/mongolian-bbq" },
+    { name: "Concession Stand", href: "/restaurant-types/concession" },
+    { name: "Digital-Only Restaurant", href: "/restaurant-types/digital-only" },
+    { name: "Theme Restaurant", href: "/restaurant-types/theme" },
     { name: "Bakery", href: "/restaurant-types/bakery" },
-    { name: "Cafe & Bistro", href: "/restaurant-types/cafe-bistro" },
-    { name: "Family Style", href: "/restaurant-types/family-style" },
-    { name: "Fast Food", href: "/restaurant-types/fast-food" },
-    { name: "Fine Dine", href: "/restaurant-types/fine-dine" },
-    { name: "Food Truck", href: "/restaurant-types/food-truck" },
-    { name: "Full Service", href: "/restaurant-types/full-service" },
-    { name: "Ghost Kitchen", href: "/restaurant-types/ghost-kitchen" },
+    { name: "Delivery-Only Restaurant", href: "/restaurant-types/delivery-only" },
   ];
 
   return (
@@ -121,42 +141,55 @@ const Footer = () => {
          <Image src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1000&auto=format&fit=crop" width={200} height={200} alt="Ingredients" className="object-contain" />
       </div>
 
-      <div className="container mx-auto px-6 pt-16 pb-24 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 pt-16 pb-24 relative z-10">
         <motion.div 
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12"
         >
           {/* Column 1: Brand */}
-          <motion.div variants={itemVariants} className="space-y-6">
+          <motion.div variants={itemVariants} className="space-y-6 lg:col-span-4">
             <div className="flex flex-col gap-2">
-                <h2 className="text-3xl font-bold tracking-tighter uppercase relative inline-block">
+                <h2 className="text-4xl font-bold tracking-tighter uppercase relative inline-block">
                     Dine <span className="text-brand-red">360</span>
-                    <div className="h-1 w-16 bg-brand-red mt-2"></div>
+                    <div className="h-1.5 w-20 bg-brand-red mt-2"></div>
                 </h2>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis.
+            <p className="text-gray-400 text-base leading-relaxed max-w-sm">
+              Proudly serving independent restaurants in Toronto (GTA), Hamilton, and Kitchener-Waterloo. Providing comprehensive solutions for the modern restaurant industry.
             </p>
             <div className="flex gap-3">
-              {[Facebook, Twitter, Linkedin, Youtube].map((Icon, idx) => (
-                <a key={idx} href="#" className="w-10 h-10 bg-white/10 hover:bg-brand-red transition-colors rounded flex items-center justify-center text-white">
-                  <Icon size={18} />
+              {[
+                { Icon: Facebook, href: "#" },
+                { Icon: Instagram, href: "https://www.instagram.com/dine360.ca/" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/dine-360/" },
+                { Icon: Youtube, href: "#" }
+              ].map((social, idx) => (
+                <a 
+                  key={idx} 
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-white/10 hover:bg-brand-red transition-all duration-300 rounded-lg flex items-center justify-center text-white hover:-translate-y-1"
+                >
+                  <social.Icon size={18} />
                 </a>
               ))}
             </div>
           </motion.div>
 
           {/* Column 2: Quick Links */}
-          <motion.div variants={itemVariants} className="space-y-6">
-             <h3 className="text-xl font-bold">Quick Links</h3>
-             <div className="w-12 h-1 bg-brand-red -mt-4 mb-6"></div>
-             <ul className="space-y-4">
+          <motion.div variants={itemVariants} className="space-y-6 lg:col-span-2">
+             <div className="flex flex-col items-start">
+                 <h3 className="text-2xl font-bold whitespace-nowrap">Quick Links</h3>
+                 <div className="h-1 w-10 bg-brand-red mt-2"></div>
+             </div>
+             <ul className="space-y-4 pt-4">
                {links.map((link, i) => (
                  <li key={i}>
-                   <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group">
+                   <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
                      <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform" />
                      {link.name}
                    </a>
@@ -166,37 +199,92 @@ const Footer = () => {
           </motion.div>
 
           {/* Column 3: Features */}
-          <motion.div variants={itemVariants} className="space-y-6">
-             <h3 className="text-xl font-bold">Features</h3>
-             <div className="w-12 h-1 bg-brand-red -mt-4 mb-6"></div>
-             <ul className="space-y-4">
-               {featureLinks.map((link, i) => (
-                 <li key={i}>
-                   <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group">
-                     <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform" />
-                     {link.name}
-                   </a>
-                 </li>
-               ))}
-             </ul>
+          <motion.div variants={itemVariants} className="space-y-6 lg:col-span-6">
+             <div className="flex flex-col items-start">
+                 <h3 className="text-2xl font-bold whitespace-nowrap">Features</h3>
+                 <div className="h-1 w-10 bg-brand-red mt-2"></div>
+             </div>
+             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 pt-4">
+               <ul className="space-y-4">
+                 {featureLinks.slice(0, 7).map((link, i) => (
+                   <li key={i}>
+                     <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
+                       <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform" />
+                       {link.name}
+                     </a>
+                   </li>
+                 ))}
+               </ul>
+               <ul className="space-y-4">
+                 {featureLinks.slice(7, 14).map((link, i) => (
+                   <li key={i}>
+                     <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
+                       <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform" />
+                       {link.name}
+                     </a>
+                   </li>
+                 ))}
+               </ul>
+             </div>
           </motion.div>
 
-          {/* Column 4: Restaurant Types */}
-          <motion.div variants={itemVariants} className="space-y-6">
-             <h3 className="text-xl font-bold">Restaurant Types</h3>
-             <div className="w-12 h-1 bg-brand-red -mt-4 mb-6"></div>
-             <ul className="space-y-4">
-               {restaurantTypeLinks.map((link, i) => (
-                 <li key={i}>
-                   <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group">
-                     <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform" />
-                     {link.name}
-                   </a>
-                 </li>
-               ))}
-             </ul>
-          </motion.div>
+        </motion.div>
 
+        {/* 2nd Main Row: Restaurant Types */}
+        <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="pt-16 border-t border-white/10 mt-16"
+        >
+          <div className="flex flex-col items-start mb-8">
+              <h3 className="text-2xl font-bold whitespace-nowrap uppercase tracking-wider">Restaurant Types</h3>
+              <div className="h-1 w-12 bg-brand-red mt-2"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-4">
+            <ul className="space-y-4">
+              {restaurantTypeLinks.slice(0, 6).map((link, i) => (
+                <li key={i}>
+                  <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
+                    <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform shrink-0" />
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-4">
+              {restaurantTypeLinks.slice(6, 12).map((link, i) => (
+                <li key={i}>
+                  <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
+                    <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform shrink-0" />
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-4">
+              {restaurantTypeLinks.slice(12, 18).map((link, i) => (
+                <li key={i}>
+                  <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
+                    <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform shrink-0" />
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-4">
+              {restaurantTypeLinks.slice(18, 24).map((link, i) => (
+                <li key={i}>
+                  <a href={link.href} className="flex items-center gap-2 text-gray-400 hover:text-brand-red transition-colors group text-base">
+                    <ChevronsRight size={16} className="text-brand-red group-hover:translate-x-1 transition-transform shrink-0" />
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </motion.div>
       </div>
 
@@ -207,8 +295,8 @@ const Footer = () => {
              © All Copyright 2024 by Dine 360
           </p>
           <div className="flex gap-4">
-            <Link href="/terms" className="text-white hover:bg-black bg-black/20 transition-all text-sm px-6 py-2.5 font-bold rounded-lg shadow-sm border border-black/10">Terms & Condition</Link>
-            <Link href="/privacy" className="text-white hover:bg-black bg-black/20 transition-all text-sm px-6 py-2.5 mr-15 font-bold rounded-lg shadow-sm border border-black/10">Privacy Policy</Link>
+            <Link href="/terms" className="text-white hover:bg-black bg-brand-red transition-all text-sm px-6 py-2.5 font-bold rounded-lg shadow-sm border-1 border-white">Terms & Condition</Link>
+            <Link href="/privacy" className="text-white hover:bg-black bg-brand-red transition-all text-sm px-6 py-2.5 mr-15 font-bold rounded-lg shadow-sm border-1 border-white">Privacy Policy</Link>
           </div>
         </div>
       </div>

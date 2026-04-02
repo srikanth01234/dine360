@@ -41,6 +41,30 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
+  const scrollToComparison = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // If we're not on the home page, let the default Link behavior handle the navigation
+    if (window.location.pathname !== '/') {
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
+    e.preventDefault();
+    const element = document.getElementById('comparison');
+    if (element) {
+      const offset = 80; // Navbar height
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   const featureItems = [
     { name: 'Kitchen Management', href: '/features/kitchen-management', icon: Monitor },
     { name: 'Table Reservation', href: '/features/table-reservation', icon: Users },
@@ -127,8 +151,6 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex items-center gap-10 text-base font-medium text-zinc-700">
-        <Link href="/" className="hover:text-red-500 transition-colors">Home</Link>
-        
         <div className="relative group py-4">
           <Link href="/features" className="hover:text-red-500 transition-colors flex items-center gap-1">
             Features
@@ -142,15 +164,15 @@ const Navbar = () => {
                   <Link 
                     key={item.name} 
                     href={item.href}
-                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                    className="flex items-center justify-between p-3.5 rounded-xl hover:bg-zinc-100 transition-all group/item border border-transparent hover:border-zinc-200"
                   >
-                    <div className="flex items-center gap-4">
-                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
-                        <item.icon className="w-5 h-5" />
+                    <div className="flex items-center gap-3.5 overflow-hidden">
+                      <span className="text-red-600 bg-red-50 w-9 h-9 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-4.5 h-4.5" />
                       </span>
-                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                      <span className="font-semibold text-zinc-800 text-sm">{item.name}</span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0 shrink-0" />
                   </Link>
                 ))}
               </div>
@@ -159,15 +181,15 @@ const Navbar = () => {
                   <Link 
                     key={item.name} 
                     href={item.href}
-                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                    className="flex items-center justify-between p-3.5 rounded-xl hover:bg-zinc-100 transition-all group/item border border-transparent hover:border-zinc-200"
                   >
-                    <div className="flex items-center gap-4">
-                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
-                        <item.icon className="w-5 h-5" />
+                    <div className="flex items-center gap-3.5 overflow-hidden">
+                      <span className="text-red-600 bg-red-50 w-9 h-9 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-4.5 h-4.5" />
                       </span>
-                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                      <span className="font-semibold text-zinc-800 text-sm">{item.name}</span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0 shrink-0" />
                   </Link>
                 ))}
               </div>
@@ -176,15 +198,15 @@ const Navbar = () => {
                   <Link 
                     key={item.name} 
                     href={item.href}
-                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                    className="flex items-center justify-between p-3.5 rounded-xl hover:bg-zinc-100 transition-all group/item border border-transparent hover:border-zinc-200"
                   >
-                    <div className="flex items-center gap-4">
-                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
-                        <item.icon className="w-5 h-5" />
+                    <div className="flex items-center gap-3.5 overflow-hidden">
+                      <span className="text-red-600 bg-red-50 w-9 h-9 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-4.5 h-4.5" />
                       </span>
-                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                      <span className="font-semibold text-zinc-800 text-sm">{item.name}</span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0 shrink-0" />
                   </Link>
                 ))}
               </div>
@@ -193,15 +215,15 @@ const Navbar = () => {
                   <Link 
                     key={item.name} 
                     href={item.href}
-                    className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-all group/item border border-transparent hover:border-zinc-100"
+                    className="flex items-center justify-between p-3.5 rounded-xl hover:bg-zinc-100 transition-all group/item border border-transparent hover:border-zinc-200"
                   >
-                    <div className="flex items-center gap-4">
-                      <span className="text-red-600 bg-red-50 w-10 h-10 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
-                        <item.icon className="w-5 h-5" />
+                    <div className="flex items-center gap-3.5 overflow-hidden">
+                      <span className="text-red-600 bg-red-50 w-9 h-9 flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all shadow-sm">
+                        <item.icon className="w-4.5 h-4.5" />
                       </span>
-                      <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
+                      <span className="font-semibold text-zinc-800 text-sm">{item.name}</span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
+                    <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0 shrink-0" />
                   </Link>
                 ))}
               </div>
@@ -218,65 +240,15 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="relative group py-4">
-          <Link href="/restaurant-types" className="hover:text-red-500 transition-colors flex items-center gap-1">
-            Restaurant Types
-            <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-          </Link>
-          
-          <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 hidden group-hover:block w-[1400px]">
-            <div className="bg-white rounded-2xl shadow-2xl border border-zinc-100 overflow-hidden px-10 py-8 grid grid-cols-6 gap-x-6 gap-y-2">
-              {restaurantTypes.map((item) => (
-                <Link 
-                  key={item.name} 
-                  href={item.href}
-                  className="flex items-center justify-between p-4 rounded-xl hover:bg-zinc-50 transition-colors group/item border border-transparent hover:border-zinc-100"
-                >
-                  <div className="flex items-center gap-4">
-                    <span className="text-red-600 bg-red-50 w-10 h-10 min-w-[40px] flex items-center justify-center rounded-lg group-hover/item:bg-red-600 group-hover/item:text-white transition-all">
-                      <item.icon className="w-5 h-5" />
-                    </span>
-                    <span className="font-semibold text-zinc-800 text-sm whitespace-nowrap">{item.name}</span>
-                  </div>
-                  <ArrowRight className="w-4 h-4 text-zinc-400 opacity-0 group-hover/item:opacity-100 transition-all -translate-x-2 group-hover/item:translate-x-0" />
-                </Link>
-              ))}
-              <div className="col-span-6 mt-4 pt-4 border-t border-zinc-100 flex justify-center">
-                <Link 
-                  href="/restaurant-types"
-                  className="flex items-center gap-2 px-8 py-3 rounded-xl bg-red-50 hover:bg-red-100 text-red-700 transition-colors group/view-all font-semibold text-sm"
-                >
-                  View All Restaurant Types
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover/view-all:translate-x-1" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Link href="/pricing" className="hover:text-red-500 transition-colors">Pricing</Link>
-        <div className="relative group py-4">
-          <button className="hover:text-red-500 transition-colors flex items-center gap-1 bg-transparent border-none p-0 cursor-pointer font-medium text-base">
-            Resources
-            <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-          </button>
-          
-          <div className="absolute top-full right-0 pt-2 hidden group-hover:block w-[240px]">
-            <div className="bg-white rounded-2xl shadow-2xl border border-zinc-100 overflow-hidden p-2 flex flex-col gap-1">
-              {resourceItems.map((item) => (
-                <Link 
-                  key={item.name} 
-                  href={item.href}
-                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 transition-colors group/item border border-transparent hover:border-zinc-100"
-                >
-                  <span className={`w-10 h-10 flex items-center justify-center rounded-lg bg-red-50 text-red-600 group-hover/item:bg-red-600 group-hover/item:text-white transition-all`}>
-                    <item.icon className="w-5 h-5" />
-                  </span>
-                  <span className="font-medium text-zinc-600 group-hover/item:text-zinc-900 transition-colors text-sm">{item.name}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
+        <Link href="/temppricing" className="hover:text-red-500 transition-colors">Pricing</Link>
+        <Link 
+          href="/#comparison" 
+          onClick={scrollToComparison}
+          className="hover:text-red-500 transition-colors"
+        >
+          Comparison
+        </Link>
+        <Link href="/contact" className="hover:text-red-500 transition-colors">Contact</Link>
       </div>
 
       <div className="flex items-center gap-4 px-0 md:px-5">
@@ -320,8 +292,6 @@ const Navbar = () => {
             </div>
 
             <div className="flex-1 overflow-y-auto p-6 space-y-2">
-              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-lg font-bold text-zinc-800 border-b border-zinc-50">Home</Link>
-              
               {/* Features Mobile Accordion */}
               <div className="py-3 border-b border-zinc-50">
                 <button 
@@ -367,89 +337,15 @@ const Navbar = () => {
                 </AnimatePresence>
               </div>
 
-              {/* Restaurant Types Mobile Accordion */}
-              <div className="py-3 border-b border-zinc-50">
-                <button 
-                  onClick={() => toggleAccordion('types')}
-                  className="flex items-center justify-between w-full text-lg font-bold text-zinc-800"
-                >
-                  Restaurant Types
-                  <ChevronDown className={`w-5 h-5 transition-transform ${activeAccordion === 'types' ? 'rotate-180' : ''}`} />
-                </button>
-                <AnimatePresence>
-                  {activeAccordion === 'types' && (
-                    <motion.div 
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="grid grid-cols-1 gap-2 pt-4">
-                        {restaurantTypes.map((item) => (
-                          <Link 
-                            key={item.name} 
-                            href={item.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="flex items-center gap-3 p-3 rounded-lg hover:bg-zinc-50 transition-colors"
-                          >
-                            <span className="text-red-600 bg-red-50 p-2 rounded-md">
-                              <item.icon className="w-4 h-4" />
-                            </span>
-                            <span className="text-sm font-semibold text-zinc-700">{item.name}</span>
-                          </Link>
-                        ))}
-                        <Link 
-                          href="/restaurant-types"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="flex items-center justify-between p-3 rounded-lg bg-red-50 text-red-700 hover:bg-red-100 transition-colors font-semibold text-sm mt-2"
-                        >
-                          View All Types
-                          <ArrowRight className="w-4 h-4" />
-                        </Link>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-
-              <Link href="/pricing" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-lg font-bold text-zinc-800 border-b border-zinc-50">Pricing</Link>
-
-              {/* Resources Mobile Accordion */}
-              <div className="py-3 border-b border-zinc-50">
-                <button 
-                  onClick={() => toggleAccordion('resources')}
-                  className="flex items-center justify-between w-full text-lg font-bold text-zinc-800"
-                >
-                  Resources
-                  <ChevronDown className={`w-5 h-5 transition-transform ${activeAccordion === 'resources' ? 'rotate-180' : ''}`} />
-                </button>
-                <AnimatePresence>
-                  {activeAccordion === 'resources' && (
-                    <motion.div 
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="grid grid-cols-1 gap-2 pt-4">
-                        {resourceItems.map((item) => (
-                          <Link 
-                            key={item.name} 
-                            href={item.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="flex items-center gap-3 p-3 rounded-lg hover:bg-zinc-50 transition-colors"
-                          >
-                            <span className="text-red-600 bg-red-50 p-2 rounded-md">
-                              <item.icon className="w-4 h-4" />
-                            </span>
-                            <span className="text-sm font-semibold text-zinc-700">{item.name}</span>
-                          </Link>
-                        ))}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
+              <Link href="/temppricing" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-lg font-bold text-zinc-800 border-b border-zinc-50">Pricing</Link>
+              <Link 
+                href="/#comparison" 
+                onClick={scrollToComparison} 
+                className="block py-3 text-lg font-bold text-zinc-800 border-b border-zinc-50"
+              >
+                Comparison
+              </Link>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-lg font-bold text-zinc-800 border-b border-zinc-50">Contact</Link>
             </div>
 
             <div className="p-6">

@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
@@ -177,9 +177,20 @@ const ContactPage = () => {
                 <p className="text-zinc-500 font-medium text-sm">Stay connected with us for product updates, restaurant insights, and new features.</p>
               </div>
               <div className="flex items-center gap-4 pb-8">
-                {[Linkedin, Instagram, Youtube, Twitter].map((Icon, idx) => (
-                  <a key={idx} href="#" className="w-12 h-12 rounded-xl bg-red-600 flex items-center justify-center text-white hover:bg-zinc-900 transition-all hover:-translate-y-1 shadow-lg shadow-red-600/10">
-                    <Icon className="w-5 h-5" />
+                {[
+                  { Icon: Linkedin, href: "https://www.linkedin.com/company/dine-360/" },
+                  { Icon: Instagram, href: "https://www.instagram.com/dine360.ca/" },
+                  { Icon: Youtube, href: "#" },
+                  { Icon: Facebook, href: "#" }
+                ].map((social, idx) => (
+                  <a 
+                    key={idx} 
+                    href={social.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-xl bg-red-600 flex items-center justify-center text-white hover:bg-zinc-900 transition-all hover:-translate-y-1 shadow-lg shadow-red-600/10"
+                  >
+                    <social.Icon className="w-5 h-5" />
                   </a>
                 ))}
               </div>

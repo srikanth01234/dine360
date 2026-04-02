@@ -7,6 +7,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import FAQ from "@/components/FAQ";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ComparisonSection from "@/components/ComparisonSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <VideoSection />
+      <ComparisonSection />
       <FeaturesSection />
       <HighlightsSection />
       <Testimonials />

@@ -12,8 +12,8 @@ const slides = [
   },
   {
     tag: "Next-Gen Analytics",
-    title: "Elevate Your Dining Experience\nWith AI",
-    description: "Harness the power of real-time data to optimize your menu, staff schedules, and customer loyalty programs like never before.",
+    title: "The Local POS\nThat Saves You 50%.",
+    description: "No per-tablet fees. No per-employee fees. Use the hardware you already own.",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070"
   },
   {
@@ -87,7 +87,7 @@ const HeroSection = () => {
                 
                 <div className="flex flex-col sm:flex-row items-center justify-start gap-6 w-full">
                   <button className="w-full sm:w-auto bg-red-600 text-white px-10 py-4 rounded-full font-black text-lg hover:bg-red-700 transition-all shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:scale-105 active:scale-95">
-                    START FREE TRIAL
+                    Get My 60-Second Audit
                   </button>
                   <a 
                     href="https://www.youtube.com/watch?v=hipB2vhwj_Y" 
