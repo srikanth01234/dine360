@@ -122,7 +122,7 @@ const ComparisonSection = () => {
                 keep every dollar where it belongs.
             </p>
             <Link 
-                href="/contact" 
+                href="/temppricing" 
                 className="group relative inline-flex items-center gap-3 bg-brand-red text-white font-bold py-4 px-8 rounded-xl hover:bg-brand-red/90 transition-all shadow-lg overflow-hidden"
             >
                 <span className="relative z-10">Get Started Free</span>

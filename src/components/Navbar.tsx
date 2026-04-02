@@ -151,6 +151,7 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex items-center gap-10 text-base font-medium text-zinc-700">
+        <Link href="/" className="hover:text-red-500 transition-colors">Home</Link>
         <div className="relative group py-4">
           <Link href="/features" className="hover:text-red-500 transition-colors flex items-center gap-1">
             Features
@@ -292,6 +293,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex-1 overflow-y-auto p-6 space-y-2">
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="block py-3 text-lg font-bold text-zinc-800 border-b border-zinc-50">Home</Link>
               {/* Features Mobile Accordion */}
               <div className="py-3 border-b border-zinc-50">
                 <button 

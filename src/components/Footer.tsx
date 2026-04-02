@@ -135,10 +135,10 @@ const Footer = () => {
 
       {/* Background Decor */}
       <div className="absolute top-40 left-0 w-64 h-64 pointer-events-none opacity-40 mix-blend-overlay">
-         <Image src="https://cdn-icons-png.flaticon.com/512/753/753839.png" width={300} height={300} alt="Lettuce" className="rotate-45" />
+         {/* <Image src="https://cdn-icons-png.flaticon.com/512/753/753839.png" width={300} height={300} alt="Lettuce" className="rotate-45" /> */}
       </div>
        <div className="absolute top-20 right-0 w-48 h-48 pointer-events-none opacity-20">
-         <Image src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1000&auto=format&fit=crop" width={200} height={200} alt="Ingredients" className="object-contain" />
+         {/* <Image src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1000&auto=format&fit=crop" width={200} height={200} alt="Ingredients" className="object-contain" /> */}
       </div>
 
       <div className="max-w-7xl mx-auto px-4 pt-16 pb-24 relative z-10">
